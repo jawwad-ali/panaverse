@@ -61,7 +61,7 @@ const Navbar = () => {
       <IconButton
         aria-label="Open Menu"
         size="lg"
-        mr="10"
+        mr={{ base: "4", md: "7", lg: "10" }}
         icon={<HamburgerIcon />}
         onClick={() => setDisplay("flex")}
         display={{ base: "flex", md: "flex", lg: "none" }}
