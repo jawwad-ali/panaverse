@@ -20,10 +20,12 @@ const Navbar = () => {
   const [display, setDisplay] = useState("none");
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
-      <Flex px="8" py={"4"} flex="0.6">
+      {/* Logo */}
+      <Flex px={{ base: "2", md: "6", lg: "8" }} py={"4"} flex="0.6">
         <Image src={Logo} alt="logo" height={"100"} width={"100"} />
       </Flex>
 
+      {/* Right Side */}
       <Box flex={"0.4"} display={{ base: "none", md: "none", lg: "flex" }}>
         <UnorderedList
           listStyleType={"none"}
@@ -32,6 +34,7 @@ const Navbar = () => {
           justifyContent={"space-around"}
           alignItems={"center"}
         >
+          {/* Items */}
           <ListItem>
             <Link href="/">Home</Link>
           </ListItem>
