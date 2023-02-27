@@ -5,7 +5,7 @@ import { Yantramanav, Roboto } from "@next/font/google";
 import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import HeroSectionImg from "../../assets/herosectionTwo.jpg";
 // import HeroSectionImg from "../../public/herosection.png";
 // import HeroSectionImg from "../../public/herosection.webp";
@@ -88,15 +88,15 @@ const HeroSection = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        data-aos="fade-right" 
+        data-aos="fade-right"
       >
         <Image
           src={HeroSectionImg}
-          alt="Hero Section Image"
-          layout="responsive"
-          data-aos="fade-right"
+          alt="Hero Section Image" 
+          // fill
+          data-aos="fade-right"  
         />
-      </Box> 
+      </Box>
     </SimpleGrid>
   );
 };
