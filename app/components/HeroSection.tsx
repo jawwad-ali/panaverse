@@ -88,7 +88,7 @@ const HeroSection = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        data-aos="fade-right"
+        // data-aos="fade-right"
       >
         <Image
           src={HeroSectionImg}
@@ -96,7 +96,7 @@ const HeroSection = () => {
           // fill 
           // width={612} 
           // height={501}
-          data-aos="fade-right"
+          // data-aos="fade-right"
         /> 
       </Box>
     </SimpleGrid>

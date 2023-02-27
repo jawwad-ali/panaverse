@@ -43,7 +43,7 @@ const CardSection = () => {
             border="1px"
             borderColor="gray.400"
             w={{ base: "100%", lg: "33%" }}
-            data-aos="fade-down"
+            // data-aos="fade-down"
             height={{ base: "220px", lg: "270px" }}
             mt={4}
           >
