@@ -16,6 +16,13 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import { useState } from "react";
 
+import { Manrope } from "@next/font/google";
+
+const manrope = Manrope({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 const Navbar = () => {
   const [display, setDisplay] = useState("none");
   return (
@@ -33,26 +40,37 @@ const Navbar = () => {
           w="100%"
           justifyContent={"space-around"}
           alignItems={"center"}
+          className={manrope.className}
+          fontSize="17px"
         >
           {/* Items */}
-          <ListItem>
+          <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
             <Link href="/">Home</Link>
           </ListItem>
 
-          <ListItem>
+          <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
             <Link href="/">Web 3.0</Link>
           </ListItem>
 
-          <ListItem>
+          <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
             <Link href="/">About Us</Link>
           </ListItem>
 
-          <ListItem>
+          <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
             <Link href="/">Courses</Link>
           </ListItem>
 
           <ListItem>
-            <Button colorScheme="green">Apply Now</Button>
+            <Link href="https://www.piaic.org/">
+              <Button
+                style={{
+                  backgroundImage: "linear-gradient(270deg,#08d88d,#0eb5a3)",
+                }}
+                color="white"
+              >
+                Apply Now
+              </Button>
+            </Link>
           </ListItem>
         </UnorderedList>
       </Box>
@@ -118,7 +136,16 @@ const Navbar = () => {
             </ListItem>
 
             <ListItem py="5">
-              <Button colorScheme="green">Apply Now</Button>
+              <Link href="https://www.piaic.org/">
+                <Button
+                  style={{
+                    backgroundImage: "linear-gradient(270deg,#08d88d,#0eb5a3)",
+                  }}
+                  color="white"
+                >
+                  Apply Now
+                </Button>
+              </Link>
             </ListItem>
           </UnorderedList>
         </Flex>
