@@ -16,9 +16,9 @@ const Offer = () => {
         className={yantramanav.className}
         fontSize="36px"
         textAlign={"center"}
-      >
-        What we Offer 
-      </Heading>
+      >  
+        What we Offer  
+      </Heading> 
     </Box>
   );
 };

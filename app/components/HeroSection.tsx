@@ -5,7 +5,9 @@ import { Yantramanav, Roboto } from "@next/font/google";
 import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 
-import HeroSectionImg from "../../public/herosection.webp";
+import HeroSectionImg from "../../public/herosectionTwo.jpg";
+// import HeroSectionImg from "../../public/herosection.png";
+// import HeroSectionImg from "../../public/herosection.webp";
 import Image from "next/legacy/image";
 
 import AOS from "aos";
