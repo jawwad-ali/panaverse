@@ -42,8 +42,8 @@ const HeroSection = () => {
         <Heading
           as="h1"
           fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-          className={yantramanav.className}
-          fontWeight={"bold"}
+          className={yantramanav.className} 
+          fontWeight={"bold"} 
         >
           Certified Web 3.0 and Metaverse Developer
         </Heading>
@@ -93,11 +93,11 @@ const HeroSection = () => {
         <Image
           src={HeroSectionImg}
           alt="Hero Section Image"
-          // fill
-          width={612}
-          height={501}
+          // fill 
+          // width={612} 
+          // height={501}
           data-aos="fade-right"
-        />
+        /> 
       </Box>
     </SimpleGrid>
   );
