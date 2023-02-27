@@ -92,9 +92,11 @@ const HeroSection = () => {
       >
         <Image
           src={HeroSectionImg}
-          alt="Hero Section Image" 
+          alt="Hero Section Image"
           // fill
-          data-aos="fade-right"  
+          width={612}
+          height={501}
+          data-aos="fade-right"
         />
       </Box>
     </SimpleGrid>
