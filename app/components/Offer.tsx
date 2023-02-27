@@ -6,7 +6,7 @@ import { Heading, Box, Text, useBreakpointValue } from "@chakra-ui/react";
 
 const yantramanav = Yantramanav({
   weight: ["400", "700"],
-  subsets: ["latin"],
+  subsets: ["latin"], 
 });
 
 const Offer = () => {

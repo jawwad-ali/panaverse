@@ -34,7 +34,7 @@ const HeroSection = () => {
       columns={{ base: 1, md: 1, lg: 2 }}
       spacing={{ base: 3, md: 4, lg: 5 }}
       mx="7"
-      height="90vh"
+      height={{ base: "120vh", md: "120vh", lg: "90vh" }}
       mt={{ base: "4", lg: "0" }}
     >
       <Flex flexDirection="column" justifyContent="center">
