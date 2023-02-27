@@ -6,7 +6,7 @@ import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 import HeroSectionImg from "../../public/herosection.webp";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -25,7 +25,6 @@ const HeroSection = () => {
   useEffect(() => {
     return () => {
       AOS.init();
-      AOS.refresh();
     };
   }, []);
 
@@ -46,7 +45,7 @@ const HeroSection = () => {
         >
           Certified Web 3.0 and Metaverse Developer
         </Heading>
-        <Text 
+        <Text
           pt="5"
           className={roboto.className}
           fontWeight={"normal"}
@@ -87,12 +86,13 @@ const HeroSection = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
+        data-aos="fade-right"
       >
         <Image
-          data-aos="fade-left"
           src={HeroSectionImg}
           alt="Hero Section Image"
           layout="responsive"
+          data-aos="fade-right"
         />
       </Box>
     </SimpleGrid>
