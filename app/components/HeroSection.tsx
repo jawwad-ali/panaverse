@@ -5,10 +5,10 @@ import { Yantramanav, Roboto } from "@next/font/google";
 import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 
-import HeroSectionImg from "../../public/herosectionTwo.jpg";
+import Image from "next/legacy/image";
+import HeroSectionImg from "../../assets/herosectionTwo.jpg";
 // import HeroSectionImg from "../../public/herosection.png";
 // import HeroSectionImg from "../../public/herosection.webp";
-import Image from "next/legacy/image";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -88,7 +88,7 @@ const HeroSection = () => {
         display="flex"
         flexDirection="column"
         justifyContent="center"
-        data-aos="fade-right"
+        data-aos="fade-right" 
       >
         <Image
           src={HeroSectionImg}
@@ -96,7 +96,7 @@ const HeroSection = () => {
           layout="responsive"
           data-aos="fade-right"
         />
-      </Box>
+      </Box> 
     </SimpleGrid>
   );
 };

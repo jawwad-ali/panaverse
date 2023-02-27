@@ -41,7 +41,7 @@ const Navbar = () => {
           justifyContent={"space-around"}
           alignItems={"center"}
           className={manrope.className}
-          fontSize="17px"
+          fontSize="17px" 
         >
           {/* Items */}
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
