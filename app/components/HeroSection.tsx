@@ -46,7 +46,7 @@ const HeroSection = () => {
         >
           Certified Web 3.0 and Metaverse Developer
         </Heading>
-        <Text
+        <Text 
           pt="5"
           className={roboto.className}
           fontWeight={"normal"}

@@ -11,7 +11,7 @@ const yantramanav = Yantramanav({
 
 const Offer = () => {
   return (
-    <Box mt="200px" mb="50px" mx={"7"} position='relative'>
+    <Box mt="400px" mb="50px" mx={"7"} position='relative'>
       <Heading 
         className={yantramanav.className}
         fontSize="36px"
