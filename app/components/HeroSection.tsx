@@ -10,7 +10,7 @@ import HeroSectionImg from "../../assets/herosectionTwo.jpg";
 // import HeroSectionImg from "../../public/herosection.png";
 // import HeroSectionImg from "../../public/herosection.webp";
 
-import AOS from "aos";
+import AOS from "aos"; 
 import "aos/dist/aos.css";
 
 const yantramanav = Yantramanav({
