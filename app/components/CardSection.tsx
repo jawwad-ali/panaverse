@@ -33,18 +33,19 @@ const CardSection = () => {
       <Flex
         justifyContent="space-around"
         direction={{ base: "column", lg: "row" }}
-        alignItems="center"
         mx={{ base: "6", lg: "0" }}
         mt={4}
       >
         {data.map((d) => (
           <Card
+            margin={1}
+            flex="1"
             align="center"
             border="1px"
             borderColor="gray.400"
             w={{ base: "100%", lg: "33%" }}
             // data-aos="fade-down"
-            height={{ base: "220px", lg: "270px" }}
+            // height={{ base: "240px", lg: "270px" }}
             mt={4}
           >
             <CardHeader>
