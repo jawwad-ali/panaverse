@@ -7,15 +7,13 @@ import Link from "next/link";
 
 import Image from "next/image";
 import HeroSectionImg from "../../assets/herosectionTwo.jpg";
-// import HeroSectionImg from "../../public/herosection.png";
-// import HeroSectionImg from "../../public/herosection.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
-  subsets: ["latin"], 
+  subsets: ["latin"],
 });
 
 const roboto = Roboto({
@@ -50,7 +48,7 @@ const HeroSection = () => {
         <Text
           pt="5"
           className={roboto.className}
-          fontWeight={"normal"} 
+          fontWeight={"normal"}
           lineHeight={"28px"}
           fontSize={{ base: "15px", lg: "16px" }}
           color={"slategray.100"}
@@ -66,7 +64,7 @@ const HeroSection = () => {
         </Text>
 
         <Box mt="5">
-          <Link href="https://www.piaic.org/"> 
+          <Link href="https://www.piaic.org/">
             <Button
               style={{
                 backgroundImage: "linear-gradient(270deg,#08d88d,#0eb5a3)",

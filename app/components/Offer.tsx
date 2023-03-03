@@ -6,12 +6,12 @@ import { Heading, Box, Text, Flex } from "@chakra-ui/react";
 import CardSection from "./CardSection";
 
 const yantramanav = Yantramanav({
-  weight: [ "700"], 
+  weight: ["700"],
   subsets: ["latin"],
 });
 
 const Offer = () => {
-  return ( 
+  return (
     <Box mt="100px" mb="50px" position="relative" maxW={"100%"}>
       <Heading
         className={yantramanav.className}
@@ -31,7 +31,11 @@ const Offer = () => {
       >
         Core Courses (Common in All Specializations):
       </Heading>
-      <Text fontSize={{ base: "15px", lg: "16px" }} textAlign={"center"}>
+      <Text
+        fontSize={{ base: "15px", lg: "16px" }}
+        textAlign={"center"}
+        px={{ base: "6", lg: "0" }}
+      >
         Every participant of the program will start by completing the following
         three core courses:
       </Text>
@@ -40,7 +44,6 @@ const Offer = () => {
       <Flex
         justifyContent="space-around"
         direction={{ base: "column", lg: "row" }}
-        mx={{ base: "6", lg: "0" }}
         mt={4}
         w="100%"
       >
@@ -69,7 +72,11 @@ const Offer = () => {
         Specialized Tracks
       </Heading>
 
-      <Text fontSize={{ base: "15px", lg: "16px" }} textAlign={"center"}>
+      <Text
+        px={{ base: "4", md: "0" }}
+        fontSize={{ base: "15px", lg: "16px" }}
+        textAlign={"center"}
+      >
         After completing the first three quarters the participants will select
         one or more specializations consisting of two courses each:
       </Text>
