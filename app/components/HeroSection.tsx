@@ -37,13 +37,10 @@ const HeroSection = () => {
       mt={{ base: "4", lg: "0" }}
     >
       <Flex flexDirection="column" justifyContent="center">
-        <Heading
-          as="h1"
-          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-          className={yantramanav.className}
-          fontWeight={"bold"}
-        >
-          Certified Web 3.0 and Metaverse Developer
+        <Heading as="h1" fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+          <Text className={yantramanav.className} fontWeight={"bold"}>
+            Certified Web 3.0 and Metaverse Developer
+          </Text>
         </Heading>
         <Text
           pt="5"

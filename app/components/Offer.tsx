@@ -14,22 +14,24 @@ const Offer = () => {
   return (
     <Box mt="100px" mb="50px" position="relative" maxW={"100%"}>
       <Heading
-        className={yantramanav.className}
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
         pb={4}
       >
-        What we Offer
+        <Text fontWeight="bold" className={yantramanav.className}>
+          What we Offer
+        </Text>
       </Heading>
 
       {/* Common courses */}
       <Heading
-        className={yantramanav.className}
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
         mb={2}
       >
-        Core Courses (Common in All Specializations):
+        <Text fontWeight="bold" className={yantramanav.className}>
+          Core Courses (Common in All Specializations):
+        </Text>
       </Heading>
       <Text
         fontSize={{ base: "15px", lg: "16px" }}
@@ -46,6 +48,7 @@ const Offer = () => {
         direction={{ base: "column", lg: "row" }}
         mt={4}
         w="100%"
+        // px={{ base: "6", lg: "0" }}
       >
         <CardSection
           quarter="Quarter I (Core)"
@@ -68,8 +71,10 @@ const Offer = () => {
         textAlign={"center"}
         pb={4}
         mt={10}
-      >
-        Specialized Tracks
+      > 
+        <Text fontWeight="bold" className={yantramanav.className}>
+          Specialized Tracks
+        </Text>
       </Heading>
 
       <Text
