@@ -10,12 +10,12 @@ import HeroSectionImg from "../../assets/herosectionTwo.jpg";
 // import HeroSectionImg from "../../public/herosection.png";
 // import HeroSectionImg from "../../public/herosection.webp";
 
-import AOS from "aos"; 
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const yantramanav = Yantramanav({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+  weight: ["700"],
+  subsets: ["latin"], 
 });
 
 const roboto = Roboto({
@@ -42,15 +42,15 @@ const HeroSection = () => {
         <Heading
           as="h1"
           fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
-          className={yantramanav.className} 
-          fontWeight={"bold"} 
+          className={yantramanav.className}
+          fontWeight={"bold"}
         >
           Certified Web 3.0 and Metaverse Developer
         </Heading>
         <Text
           pt="5"
           className={roboto.className}
-          fontWeight={"normal"}
+          fontWeight={"normal"} 
           lineHeight={"28px"}
           fontSize={{ base: "15px", lg: "16px" }}
           color={"slategray.100"}
@@ -66,7 +66,7 @@ const HeroSection = () => {
         </Text>
 
         <Box mt="5">
-          <Link href="https://www.piaic.org/">
+          <Link href="https://www.piaic.org/"> 
             <Button
               style={{
                 backgroundImage: "linear-gradient(270deg,#08d88d,#0eb5a3)",
@@ -93,11 +93,11 @@ const HeroSection = () => {
         <Image
           src={HeroSectionImg}
           alt="Hero Section Image"
-          // fill 
-          // width={612} 
+          // fill
+          // width={612}
           // height={501}
           // data-aos="fade-right"
-        /> 
+        />
       </Box>
     </SimpleGrid>
   );

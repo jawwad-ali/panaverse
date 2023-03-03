@@ -3,7 +3,7 @@ import {
   Card,
   CardBody,
   CardFooter,
-  CardHeader, 
+  CardHeader,
   Heading,
   Text,
 } from "@chakra-ui/react";
@@ -16,19 +16,19 @@ interface CardProps {
 import { Yantramanav, Roboto } from "@next/font/google";
 
 const yantramanav = Yantramanav({
-  weight: ["400", "700"],
-  subsets: ["latin"],
+  weight: ["700"],
+  subsets: ["latin"], 
 });
 
 const roboto = Roboto({
-  weight: ["400", "700"],
+  weight: ["400"], 
   subsets: ["latin"],
 });
 
 const CardSection = ({ quarter, oneLiner }: CardProps) => {
   return (
-    <>
-      <Card 
+    <> 
+      <Card
         margin={1}
         flex="1"
         boxShadow="base"

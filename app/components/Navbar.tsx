@@ -24,7 +24,7 @@ const manrope = Manrope({
 });
 
 const Navbar = () => {
-  const [display, setDisplay] = useState("none");
+  const [display, setDisplay] = useState("none"); 
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
       {/* Logo */}

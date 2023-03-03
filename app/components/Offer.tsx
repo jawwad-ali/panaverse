@@ -6,7 +6,7 @@ import { Heading, Box, Text, Flex } from "@chakra-ui/react";
 import CardSection from "./CardSection";
 
 const yantramanav = Yantramanav({
-  weight: ["400", "700"],
+  weight: [ "700"], 
   subsets: ["latin"],
 });
 
@@ -78,6 +78,8 @@ const Offer = () => {
       <Box
         display="flex"
         flexWrap="wrap"
+        mx={{ base: "6", lg: "0" }}
+        mt={4}
         maxW="100%"
         justifyContent="space-between"
         flexDirection={{ base: "column", lg: "row" }}
