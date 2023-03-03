@@ -17,28 +17,30 @@ import { Yantramanav, Roboto } from "@next/font/google";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
-  subsets: ["latin"], 
+  subsets: ["latin"],
 });
 
 const roboto = Roboto({
-  weight: ["400"], 
+  weight: ["400"],
   subsets: ["latin"],
 });
 
 const CardSection = ({ quarter, oneLiner }: CardProps) => {
   return (
-    <> 
+    <>
       <Card
         margin={1}
         flex="1"
         boxShadow="base"
         align="center"
         w={{ base: "100%", lg: "33%" }}
-        mt={4} 
+        mt={4}
       >
         <CardHeader>
           <Heading size="md" className={yantramanav.className}>
-            {quarter}
+            <Text fontWeight="bold" className={yantramanav.className}>
+              {quarter}
+            </Text>
           </Heading>
         </CardHeader>
         <CardBody>
