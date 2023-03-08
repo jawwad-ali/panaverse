@@ -6,7 +6,9 @@ import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 
 import Image from "next/image";
-import HeroSectionImg from "../../assets/herosectionTwo.jpg";
+// import HeroSectionImg from "../../assets/herosectionTwo.jpg";
+
+import HeroSectionImg from "../../public/herosection.webp";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

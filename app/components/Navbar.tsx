@@ -1,11 +1,12 @@
 "use client";
 import {
   Flex,
-  ListItem, 
+  ListItem,
   UnorderedList,
   Button,
   Box,
-  IconButton, 
+  IconButton,
+  useColorMode,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,13 +19,18 @@ import { useState } from "react";
 
 import { Manrope } from "@next/font/google";
 
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+
 const manrope = Manrope({
   weight: ["400"],
   subsets: ["latin"],
 });
 
 const Navbar = () => {
-  const [display, setDisplay] = useState("none"); 
+  const [display, setDisplay] = useState("none");
+
+  const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
       {/* Logo */}
@@ -41,7 +47,7 @@ const Navbar = () => {
           justifyContent={"space-around"}
           alignItems={"center"}
           className={manrope.className}
-          fontSize="17px" 
+          fontSize="17px"
         >
           {/* Items */}
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
@@ -72,6 +78,12 @@ const Navbar = () => {
               </Button>
             </Link>
           </ListItem>
+
+          <ListItem>
+            <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </IconButton>
+          </ListItem>
         </UnorderedList>
       </Box>
 
@@ -88,13 +100,15 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <Flex
         w="100vw"
-        bgColor={"gray.50"}
+        bgColor={colorMode === "dark" ? "#393838" : "orange"}
+        // bgColor={"gray.50"}
+        // bgColor='#FFFF66'
         zIndex={50}
         h="100vh"
         pos="fixed"
         top="0"
         left="0"
-        overflowY="auto"
+        overflowY="auto" 
         flexDir={"column"}
         display={display}
         right="1"
@@ -146,6 +160,12 @@ const Navbar = () => {
                   Apply Now
                 </Button>
               </Link>
+            </ListItem>
+
+            <ListItem>
+              <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
+                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+              </IconButton>
             </ListItem>
           </UnorderedList>
         </Flex>

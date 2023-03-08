@@ -3,11 +3,13 @@
 import React from "react";
 import { ChakraProvider } from '@chakra-ui/react';
 
+import theme from "@/theme";
+ 
 function ChakraWrapper({children}: {
     children: React.ReactNode
   }) { 
     return (
-      <ChakraProvider>
+      <ChakraProvider theme={theme}> 
         {children} 
       </ChakraProvider>
     )

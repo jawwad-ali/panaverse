@@ -12,7 +12,12 @@ const yantramanav = Yantramanav({
 
 const Offer = () => {
   return (
-    <Box mt="100px" mb="50px" position="relative" maxW={"100%"}>
+    <Box
+      mt={{ base: "200px", lg: "100px" }}
+      mb="50px"
+      position="relative"
+      maxW={"100%"}
+    >
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
@@ -48,7 +53,7 @@ const Offer = () => {
         direction={{ base: "column", lg: "row" }}
         mt={4}
         w="100%"
-        // px={{ base: "6", lg: "0" }}
+        px={{ base: "6", lg: "0" }}
       >
         <CardSection
           quarter="Quarter I (Core)"
@@ -71,7 +76,7 @@ const Offer = () => {
         textAlign={"center"}
         pb={4}
         mt={10}
-      > 
+      >
         <Text fontWeight="bold" className={yantramanav.className}>
           Specialized Tracks
         </Text>
@@ -86,7 +91,7 @@ const Offer = () => {
         one or more specializations consisting of two courses each:
       </Text>
 
-      {/* Specialized Tracks */}
+      {/* Specialized Tracks Cards */}
       <Box
         display="flex"
         flexWrap="wrap"
