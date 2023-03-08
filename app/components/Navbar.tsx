@@ -100,7 +100,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <Flex
         w="100vw"
-        bgColor={colorMode === "dark" ? "#393838" : "orange"}
+        bgColor={colorMode === "dark" ? "#393838" : "white"}
         // bgColor={"gray.50"}
         // bgColor='#FFFF66'
         zIndex={50}
