@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+// import { useEffect } from "react"; 
 import { Yantramanav, Roboto } from "@next/font/google";
 
 import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
@@ -24,11 +24,11 @@ const roboto = Roboto({
 });
 
 const HeroSection = () => {
-  useEffect(() => {
-    return () => {
-      AOS.init();
-    };
-  }, []);
+  // useEffect(() => {
+  //   return () => { 
+  //     AOS.init();
+  //   };
+  // }, []);
 
   return (
     <SimpleGrid

@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import {
   Flex,
   ListItem,
@@ -12,6 +12,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Logo from "../../assets/panaverse-logo.webp";
+import LogoForDark from "../../assets/dark_theme_logo.jpg";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
@@ -33,9 +34,14 @@ const Navbar = () => {
 
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
+      
       {/* Logo */}
       <Flex px={{ base: "2", md: "6", lg: "8" }} py={"4"} flex="0.6">
-        <Image src={Logo} alt="logo" height={"100"} width={"100"} />
+        {colorMode === "light" ? (
+          <Image src={Logo} alt="logo" height={"100"} width={"100"} />
+        ) : (
+          <Image src={LogoForDark} alt="logo" height={"60"} width={"60"} />
+        )}
       </Flex>
 
       {/* Right Side */}
@@ -108,7 +114,7 @@ const Navbar = () => {
         pos="fixed"
         top="0"
         left="0"
-        overflowY="auto" 
+        overflowY="auto"
         flexDir={"column"}
         display={display}
         right="1"

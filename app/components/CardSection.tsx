@@ -1,5 +1,5 @@
 import {
-  Button, 
+  Button,
   Card,
   CardBody,
   CardFooter,
@@ -37,7 +37,11 @@ const CardSection = ({ quarter, oneLiner }: CardProps) => {
         mt={4}
       >
         <CardHeader>
-          <Heading size="md" className={yantramanav.className}>
+          <Heading
+            size="md"
+            textAlign="center"
+            className={yantramanav.className}
+          >
             <Text fontWeight="bold" className={yantramanav.className}>
               {quarter}
             </Text>

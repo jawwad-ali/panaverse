@@ -32,7 +32,7 @@ const Offer = () => {
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
-        mb={2}
+        mb={2} 
       >
         <Text fontWeight="bold" className={yantramanav.className}>
           Core Courses (Common in All Specializations):
@@ -53,7 +53,7 @@ const Offer = () => {
         direction={{ base: "column", lg: "row" }}
         mt={4}
         w="100%"
-        px={{ base: "6", lg: "0" }}
+        px={{ base: "6", lg: "4" }}
       >
         <CardSection
           quarter="Quarter I (Core)"
@@ -95,7 +95,7 @@ const Offer = () => {
       <Box
         display="flex"
         flexWrap="wrap"
-        mx={{ base: "6", lg: "0" }}
+        mx={{ base: "6", lg: "4" }}
         mt={4}
         maxW="100%"
         justifyContent="space-between"
