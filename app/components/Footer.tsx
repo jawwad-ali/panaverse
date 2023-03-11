@@ -29,6 +29,7 @@ const Footer = () => {
         spacing={{ base: 3, md: 4, lg: 5 }}
         p="50px"
         mt={{ base: "4", lg: "0" }}
+        position="relative"
       >
         <Box>
           <Heading textTransform="uppercase" className={yantramanav.className}>

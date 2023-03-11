@@ -65,7 +65,7 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/">About Us</Link>
+            <Link href="/about">About Us</Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
