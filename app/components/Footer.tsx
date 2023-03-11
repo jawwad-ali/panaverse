@@ -33,7 +33,7 @@ const Footer = () => {
         <Box>
           <Heading textTransform="uppercase" className={yantramanav.className}>
             <Text
-              fontSize="26px"
+              fontSize={{ base: "20px", lg: "26px" }}
               as={"span"}
               position={"relative"}
               _after={{
@@ -61,7 +61,7 @@ const Footer = () => {
         <Box>
           <Heading textTransform="uppercase" className={yantramanav.className}>
             <Text
-              fontSize="26px"
+              fontSize={{ base: "20px", lg: "26px" }}
               as={"span"}
               position={"relative"}
               _after={{
@@ -122,7 +122,7 @@ const Footer = () => {
         <Box>
           <Heading textTransform="uppercase" className={yantramanav.className}>
             <Text
-              fontSize="26px"
+              fontSize={{ base: "20px", lg: "26px" }}
               as={"span"}
               position={"relative"}
               _after={{
@@ -185,7 +185,7 @@ const Footer = () => {
         <Box>
           <Heading textTransform="uppercase" className={yantramanav.className}>
             <Text
-              fontSize="26px"
+              fontSize={{ base: "20px", lg: "26px" }}
               as={"span"}
               position={"relative"}
               _after={{
