@@ -63,6 +63,7 @@ const Offer = () => {
             left: 0,
             bg: "green.400",
             zIndex: -1,
+            marginLeft:{base:'40px' , md:0 , lg:0}
           }}
         >
           Core Courses (Common in All Specializations):
