@@ -22,8 +22,23 @@ const Instructors = () => {
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign="center"
       >
-        <Text className={yantramanav.className} fontWeight={"bold"}>
-          Our Teachers
+        <Text
+          className={yantramanav.className}
+          fontWeight={"bold"}
+          as={"span"}
+          position={"relative"}
+          _after={{ 
+            content: "''",
+            width: "full",
+            height: "10%",
+            position: "absolute",
+            bottom: 1,
+            left: 0,
+            bg: "green.400",
+            zIndex: -1,
+          }}
+        >
+          Teachers
         </Text>
       </Heading>
 
@@ -34,13 +49,13 @@ const Instructors = () => {
         px={{ base: "6", lg: "0" }}
         pt={3}
       >
-        Our Instructors for this course:
+        Instructors for this course:
       </Text>
 
       {/* Card */}
       <Box
         w="100%"
-        marginBottom='4'
+        marginBottom="4"
         display="flex"
         justifyContent="space-between"
         flexWrap="wrap"

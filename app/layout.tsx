@@ -8,6 +8,7 @@ import theme from "@/theme";
 import { ColorModeScript } from "@chakra-ui/react";
 
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import Footer from "./components/Footer";
 
 export default function RootLayout({
   children,
@@ -23,7 +24,7 @@ export default function RootLayout({
 
           <Navbar />
           {children}
-
+          <Footer />
           {/* <Main />*/}
           {/* <NextScript />  */}
         

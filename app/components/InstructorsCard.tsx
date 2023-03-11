@@ -7,7 +7,6 @@ import { Yantramanav, Roboto } from "@next/font/google";
 import { Link } from "@chakra-ui/react";
 
 import { FaLinkedin } from "react-icons/fa";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -40,7 +39,6 @@ const InstructorsCard = ({
       alignItems="center"
       flexDirection="column"
       w={{ base: "100%", lg: "20%" }}
-      //   w="20%"
     >
       <Image
         boxSize="100px"
@@ -58,18 +56,17 @@ const InstructorsCard = ({
       >
         {name}
       </Text>
-      <Text noOfLines={1} pt="1" textAlign="center">
+      <Text
+        noOfLines={1}
+        pt="1"
+        className={roboto.className}
+        textAlign="center"
+      >
         {text}
       </Text>
 
       <Link href={`${linkedInPath}`} isExternal>
-        <Icon 
-          marginTop="5"
-          as={FaLinkedin}
-          w={8}
-          h={8}
-          color="blue.500"
-        />
+        <Icon marginTop="5" as={FaLinkedin} w={8} h={8} color="blue.500" />
       </Link>
     </Box>
   );

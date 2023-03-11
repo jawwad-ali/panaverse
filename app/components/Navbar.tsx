@@ -15,7 +15,7 @@ import Logo from "../../assets/panaverse-logo.webp";
 import LogoForDark from "../../assets/dark_theme_logo.jpg";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
+ 
 import { useState } from "react";
 
 import { Manrope } from "@next/font/google";
@@ -49,8 +49,8 @@ const Navbar = () => {
         <UnorderedList
           listStyleType={"none"}
           display={"flex"}
-          w="100%"
-          justifyContent={"space-around"}
+          w="100%" 
+          justifyContent={"space-around"} 
           alignItems={"center"}
           className={manrope.className}
           fontSize="17px"

@@ -23,7 +23,22 @@ const Offer = () => {
         textAlign={"center"}
         pb={4}
       >
-        <Text fontWeight="bold" className={yantramanav.className}>
+        <Text
+          fontWeight="bold"
+          className={yantramanav.className}
+          as={"span"}
+          position={"relative"}
+          _after={{
+            content: "''",
+            width: "full",
+            height: "10%",
+            position: "absolute",
+            bottom: 1,
+            left: 0,
+            bg: "green.400",
+            zIndex: -1,
+          }}
+        >
           What we Offer
         </Text>
       </Heading>
@@ -32,9 +47,24 @@ const Offer = () => {
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
-        mb={2} 
+        mb={2}
       >
-        <Text fontWeight="bold" className={yantramanav.className}>
+        <Text
+          fontWeight="bold"
+          className={yantramanav.className}
+          as={"span"}
+          position={"relative"}
+          _after={{
+            content: "''",
+            width: "full",
+            height: "10%",
+            position: "absolute",
+            bottom: 1,
+            left: 0,
+            bg: "green.400",
+            zIndex: -1,
+          }}
+        >
           Core Courses (Common in All Specializations):
         </Text>
       </Heading>
@@ -77,7 +107,22 @@ const Offer = () => {
         pb={4}
         mt={10}
       >
-        <Text fontWeight="bold" className={yantramanav.className}>
+        <Text
+          fontWeight="bold"
+          className={yantramanav.className}
+          as={"span"}
+          position={"relative"}
+          _after={{
+            content: "''",
+            width: "full",
+            height: "10%",
+            position: "absolute",
+            bottom: 1,
+            left: 0,
+            bg: "green.400",
+            zIndex: -1,
+          }}
+        >
           Specialized Tracks
         </Text>
       </Heading>
