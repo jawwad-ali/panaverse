@@ -14,13 +14,11 @@ import Image from "next/image";
 import Logo from "../../assets/panaverse-logo.webp";
 import LogoForDark from "../../assets/dark_theme_logo.jpg";
 
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
- 
+import { HamburgerIcon, CloseIcon,MoonIcon, SunIcon } from "@chakra-ui/icons";
+
 import { useState } from "react";
 
 import { Manrope } from "@next/font/google";
-
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const manrope = Manrope({
   weight: ["400"],
@@ -34,7 +32,6 @@ const Navbar = () => {
 
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
-      
       {/* Logo */}
       <Flex px={{ base: "2", md: "6", lg: "8" }} py={"4"} flex="0.6">
         {colorMode === "light" ? (
@@ -49,8 +46,8 @@ const Navbar = () => {
         <UnorderedList
           listStyleType={"none"}
           display={"flex"}
-          w="100%" 
-          justifyContent={"space-around"} 
+          w="100%"
+          justifyContent={"space-around"}
           alignItems={"center"}
           className={manrope.className}
           fontSize="17px"

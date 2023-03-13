@@ -5,13 +5,17 @@ import {
   CardFooter,
   CardHeader,
   Heading,
+  // Link,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
 
+import Link from "next/link"
+
 interface CardProps {
   quarter: string;
   oneLiner: string;
+  link: string;
 }
 import { Yantramanav, Roboto } from "@next/font/google";
 
@@ -25,7 +29,7 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-const CardSection = ({ quarter, oneLiner }: CardProps) => {
+const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
   return (
     <>
       <Card
@@ -50,10 +54,12 @@ const CardSection = ({ quarter, oneLiner }: CardProps) => {
         <CardBody>
           <Text className={roboto.className}>{oneLiner}</Text>
         </CardBody>
-        <CardFooter>
-          <Button colorScheme="green" className={roboto.className}>
-            View Details
-          </Button>
+        <CardFooter> 
+          <Link href={`${link}`}> 
+            <Button colorScheme="green" className={roboto.className}>
+              View Details
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </>
