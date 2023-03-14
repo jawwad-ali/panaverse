@@ -104,16 +104,13 @@ const Quarterthree = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://beta.reactjs.org/learn">
-                <strong>Build QraphQL APIs:</strong> You will be assigned to
-                build APIs for which you will sell subscriptions on the
-                Panaverse DAO Marketplace. The Panaverse DAO will receive 25%
-                share on the sale of the template which will be used to manage
-                the platform. An additional 15% will be spent on marketing the
-                template. 60% of the revenues will be distributed to the
-                developer through the Panaverse DAO in the form of Panaverse
-                tokens.
-              </Link>
+              <strong>Build QraphQL APIs:</strong> You will be assigned to build
+              APIs for which you will sell subscriptions on the Panaverse DAO
+              Marketplace. The Panaverse DAO will receive 25% share on the sale
+              of the template which will be used to manage the platform. An
+              additional 15% will be spent on marketing the template. 60% of the
+              revenues will be distributed to the developer through the
+              Panaverse DAO in the form of Panaverse tokens.
             </ListItem>
           </UnorderedList>
         </Box>
