@@ -17,7 +17,7 @@ const Offer = () => {
       mb="50px"
       position="relative"
       maxW={"100%"}
-    >
+    > 
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
@@ -99,7 +99,7 @@ const Offer = () => {
         <CardSection
           quarter="Quarter III (Core)"
           oneLiner="$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development"
-          link=""
+          link="q3"
         />
       </Flex>
 
