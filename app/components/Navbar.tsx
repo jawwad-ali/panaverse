@@ -8,6 +8,7 @@ import {
   IconButton,
   useColorMode,
 } from "@chakra-ui/react";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -66,7 +67,7 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/about">About Us</Link>
+            <Link href="about">About Us</Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>

@@ -89,7 +89,7 @@ const Offer = () => {
         <CardSection
           quarter="Quarter I (Core)"
           oneLiner="CS-101: Object-Oriented Programming using TypeScript"
-          link="q1" 
+          link="q1"
         />
         <CardSection
           quarter="Quarter II (Core)"
