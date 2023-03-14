@@ -26,7 +26,7 @@ const Quarterone = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box>
+    <Box> 
       {/* // Hero Section */}
       <Box
         height="86vh"

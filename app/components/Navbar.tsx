@@ -14,7 +14,7 @@ import Image from "next/image";
 import Logo from "../../assets/panaverse-logo.webp";
 import LogoForDark from "../../assets/dark_theme_logo.jpg";
 
-import { HamburgerIcon, CloseIcon,MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 import { useState } from "react";
 
@@ -35,9 +35,13 @@ const Navbar = () => {
       {/* Logo */}
       <Flex px={{ base: "2", md: "6", lg: "8" }} py={"4"} flex="0.6">
         {colorMode === "light" ? (
-          <Image src={Logo} alt="logo" height={"100"} width={"100"} />
+          <Link href="/">
+            <Image src={Logo} alt="logo" height={"100"} width={"100"} />
+          </Link>
         ) : (
-          <Image src={LogoForDark} alt="logo" height={"60"} width={"60"} />
+          <Link href="/">
+            <Image src={LogoForDark} alt="logo" height={"60"} width={"60"} />
+          </Link>
         )}
       </Flex>
 

@@ -94,7 +94,7 @@ const Offer = () => {
         <CardSection
           quarter="Quarter II (Core)"
           oneLiner="W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
-          link=""
+          link="q2"
         />
         <CardSection
           quarter="Quarter III (Core)"
