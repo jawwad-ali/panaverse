@@ -4,11 +4,11 @@ import {
   Heading,
   Text,
   ListItem,
-  UnorderedList,
+  UnorderedList, 
   Link,
   useColorMode,
 } from "@chakra-ui/react";
-
+ 
 import { Yantramanav, Roboto } from "@next/font/google";
 
 const yantramanav = Yantramanav({
@@ -102,7 +102,7 @@ const Quarterthree = () => {
                 Panaverse tokens.
                 <br />
               </Link>
-            </ListItem>
+            </ListItem> 
             <ListItem>
               <strong>Build QraphQL APIs:</strong> You will be assigned to build
               APIs for which you will sell subscriptions on the Panaverse DAO

@@ -9,6 +9,10 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
+
 import { Yantramanav, Roboto } from "@next/font/google";
 
 const yantramanav = Yantramanav({
@@ -22,7 +26,68 @@ const roboto = Roboto({
 });
 
 const Quartertwo = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+
+  const [isInView1, setIsInView1] = useState(false);
+  const [isInView2, setIsInView2] = useState(false);
+  const [isInView3, setIsInView3] = useState(false);
+  const [isInView4, setIsInView4] = useState(false);
+  const [isInView5, setIsInView5] = useState(false);
+  const [isInView6, setIsInView6] = useState(false);
+  const [isInView7, setIsInView7] = useState(false);
+  const [isInView8, setIsInView8] = useState(false);
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref4, inView: inView4 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref5, inView: inView5 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref6, inView: inView6 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref7, inView: inView7 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref8, inView: inView8 } = useInView({
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView1) {
+      setIsInView1(true);
+    }
+    if (inView2) {
+      setIsInView2(true);
+    }
+    if (inView3) {
+      setIsInView3(true);
+    }
+    if (inView4) {
+      setIsInView4(true);
+    }
+    if (inView5) {
+      setIsInView5(true);
+    }
+    if (inView6) {
+      setIsInView6(true);
+    }
+    if (inView7) {
+      setIsInView7(true);
+    }
+    if (inView8) {
+      setIsInView8(true);
+    }
+  }, [inView1, inView2, inView3, inView4, inView5, inView6, inView7, inView8]);
 
   return (
     <Box>
@@ -81,6 +146,10 @@ const Quartertwo = () => {
       >
         {/* One  */}
         <Box
+          ref={ref1}
+          opacity={isInView1 ? 1 : 0}
+          transform={`translateX(${isInView1 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           w={{ base: "100%", lg: "40vw" }}
           borderRadius="5px"
@@ -118,6 +187,10 @@ const Quartertwo = () => {
 
         {/* Two  */}
         <Box
+          ref={ref2}
+          opacity={isInView2 ? 1 : 0}
+          transform={`translateX(${isInView2 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           ml="auto"
@@ -154,6 +227,10 @@ const Quartertwo = () => {
 
         {/* Three */}
         <Box
+          ref={ref3}
+          opacity={isInView3 ? 1 : 0}
+          transform={`translateX(${isInView3 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           w={{ base: "100%", lg: "40vw" }}
@@ -198,6 +275,10 @@ const Quartertwo = () => {
 
         {/* Four */}
         <Box
+          ref={ref4}
+          opacity={isInView4 ? 1 : 0}
+          transform={`translateX(${isInView4 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           ml="auto"
           p="5"
           mt="5"
@@ -226,6 +307,10 @@ const Quartertwo = () => {
 
         {/* FIve */}
         <Box
+          ref={ref5}
+          opacity={isInView5 ? 1 : 0}
+          transform={`translateX(${isInView5 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           w={{ base: "100%", lg: "40vw" }}
@@ -259,6 +344,10 @@ const Quartertwo = () => {
 
         {/* Six */}
         <Box
+          ref={ref6}
+          opacity={isInView6 ? 1 : 0}
+          transform={`translateX(${isInView6 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           ml="auto"
           mt="5"
@@ -299,6 +388,10 @@ const Quartertwo = () => {
 
         {/* Seven */}
         <Box
+          ref={ref7}
+          opacity={isInView7 ? 1 : 0}
+          transform={`translateX(${isInView7 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           w={{ base: "100%", lg: "40vw" }}
@@ -326,9 +419,13 @@ const Quartertwo = () => {
 
         {/* Eight */}
         <Box
+          ref={ref8}
+          opacity={isInView8 ? 1 : 0}
+          transform={`translateX(${isInView8 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
-          ml='auto'
+          ml="auto"
           w={{ base: "100%", lg: "40vw" }}
           borderRadius="5px"
           backgroundColor={`${colorMode === "dark" ? "#1a202c" : "white"}`}
