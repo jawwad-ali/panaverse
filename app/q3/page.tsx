@@ -4,12 +4,16 @@ import {
   Heading,
   Text,
   ListItem,
-  UnorderedList, 
+  UnorderedList,
   Link,
   useColorMode,
 } from "@chakra-ui/react";
- 
+
 import { Yantramanav, Roboto } from "@next/font/google";
+
+import { useInView } from "react-intersection-observer";
+
+import { useEffect, useState } from "react";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -22,7 +26,20 @@ const roboto = Roboto({
 });
 
 const Quarterthree = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+
+  const [isInView1, setIsInView1] = useState(false);
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.2,
+  });
+
+
+  useEffect(() => {
+    if (inView1) {
+      setIsInView1(true);
+    }
+  }, [inView1]);
 
   return (
     <Box>
@@ -67,6 +84,10 @@ const Quarterthree = () => {
 
       {/* One */}
       <Box
+        ref={ref1}
+        opacity={isInView1 ? 1 : 0}
+        transform={`translateX(${isInView1 ? "0" : "-50px"})`}
+        transition="opacity 0.6s, transform 0.6s"
         maxW="1250px"
         mt="5"
         mb="10"
@@ -102,7 +123,7 @@ const Quarterthree = () => {
                 Panaverse tokens.
                 <br />
               </Link>
-            </ListItem> 
+            </ListItem>
             <ListItem>
               <strong>Build QraphQL APIs:</strong> You will be assigned to build
               APIs for which you will sell subscriptions on the Panaverse DAO

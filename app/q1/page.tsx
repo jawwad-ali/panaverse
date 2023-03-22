@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 
 import { Yantramanav, Roboto } from "@next/font/google";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -24,8 +26,48 @@ const roboto = Roboto({
 const Quarterone = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const [isInView1, setIsInView1] = useState(false);
+  const [isInView2, setIsInView2] = useState(false);
+  const [isInView3, setIsInView3] = useState(false);
+  const [isInView4, setIsInView4] = useState(false);
+  const [isInView5, setIsInView5] = useState(false);
+
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref4, inView: inView4 } = useInView({
+    threshold: 0.2,
+  });
+  const { ref: ref5, inView: inView5 } = useInView({
+    threshold: 0.2,
+  });
+
+  useEffect(() => {
+    if (inView1) {
+      setIsInView1(true);
+    }
+    if (inView2) {
+      setIsInView2(true);
+    }
+    if (inView3) {
+      setIsInView3(true);
+    }
+    if (inView4) {
+      setIsInView4(true);
+    }
+    if (inView5) {
+      setIsInView5(true);
+    }
+  }, [inView1, inView2, inView3, inView4, inView5]);
+
   return (
-    <Box> 
+    <Box>
       {/* // Hero Section */}
       <Box
         height="86vh"
@@ -78,6 +120,10 @@ const Quarterone = () => {
       >
         {/* One  */}
         <Box
+          ref={ref1}
+          opacity={isInView1 ? 1 : 0}
+          transform={`translateX(${isInView1 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           w={{ base: "100%", lg: "40vw" }}
           borderRadius="5px"
@@ -118,6 +164,10 @@ const Quarterone = () => {
 
         {/* Two  */}
         <Box
+          ref={ref2}
+          opacity={isInView2 ? 1 : 0}
+          transform={`translateX(${isInView2 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           ml="auto"
@@ -169,6 +219,10 @@ const Quarterone = () => {
 
         {/* Three  */}
         <Box
+          ref={ref3}
+          opacity={isInView3 ? 1 : 0}
+          transform={`translateX(${isInView3 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           w={{ base: "100%", lg: "40vw" }}
@@ -234,6 +288,10 @@ const Quarterone = () => {
 
         {/* Four  */}
         <Box
+          ref={ref4}
+          opacity={isInView4 ? 1 : 0}
+          transform={`translateX(${isInView4 ? "0" : "50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           ml="auto"
           p="5"
           mt="5"
@@ -270,6 +328,10 @@ const Quarterone = () => {
 
         {/* Five  */}
         <Box
+          ref={ref5}
+          opacity={isInView5 ? 1 : 0}
+          transform={`translateX(${isInView5 ? "0" : "-50px"})`}
+          transition="opacity 0.6s, transform 0.6s"
           p="5"
           mt="5"
           w={{ base: "100%", lg: "40vw" }}

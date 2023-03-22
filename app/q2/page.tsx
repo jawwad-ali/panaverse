@@ -9,8 +9,8 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 
-import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+
 import { useInView } from "react-intersection-observer";
 
 import { Yantramanav, Roboto } from "@next/font/google";
@@ -26,7 +26,7 @@ const roboto = Roboto({
 });
 
 const Quartertwo = () => {
-  const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode(); 
 
   const [isInView1, setIsInView1] = useState(false);
   const [isInView2, setIsInView2] = useState(false);
@@ -300,7 +300,7 @@ const Quartertwo = () => {
             <ListItem>
               <Link href="https://nextjs.org/docs/api-routes/introduction">
                 API Routes
-              </Link>
+              </Link> 
             </ListItem>
           </UnorderedList>
         </Box>

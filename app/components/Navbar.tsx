@@ -63,11 +63,11 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/">Web 3.0</Link>
+            <Link href="about">About Us</Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="about">About Us</Link>
+            <Link href="/">Web 3.0</Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
@@ -146,11 +146,11 @@ const Navbar = () => {
             </ListItem>
 
             <ListItem py="5">
-              <Link href="/">Web 3.0</Link>
+              <Link href="about">About Us</Link>
             </ListItem>
 
             <ListItem py="5">
-              <Link href="/">About Us</Link>
+              <Link href="/">Web 3.0</Link>
             </ListItem>
 
             <ListItem py="5">
