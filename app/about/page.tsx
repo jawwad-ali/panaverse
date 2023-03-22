@@ -30,7 +30,7 @@ const About = () => {
       <Box
         className={roboto.className}
         textAlign="center"
-        mx={{ base: 2, lg: 0 }}
+        mx={{ base: 7, lg: 0 }}
         mt={{ base: 6, lg: 0 }}
         fontSize={{ base: "14px", lg: "16px" }}
       >
