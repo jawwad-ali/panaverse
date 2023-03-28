@@ -31,6 +31,12 @@ const Navbar = () => {
 
   const { colorMode, toggleColorMode } = useColorMode();
 
+  // Scroll to the courses component
+  function scrollToCoursesComponent() {
+    const secondComponent = document.getElementById("courses");
+    secondComponent?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
       {/* Logo */}
@@ -71,7 +77,9 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/">Courses</Link>
+            <Link href="#courses" onClick={scrollToCoursesComponent}>
+              Courses
+            </Link>
           </ListItem>
 
           <ListItem>
@@ -109,8 +117,6 @@ const Navbar = () => {
       <Flex
         w="100vw"
         bgColor={colorMode === "dark" ? "#393838" : "white"}
-        // bgColor={"gray.50"}
-        // bgColor='#FFFF66'
         zIndex={50}
         h="100vh"
         pos="fixed"
@@ -154,7 +160,9 @@ const Navbar = () => {
             </ListItem>
 
             <ListItem py="5">
-              <Link href="/">Courses</Link>
+              <Link href="#courses" onClick={scrollToCoursesComponent}>
+                Courses
+              </Link>
             </ListItem>
 
             <ListItem py="5">
