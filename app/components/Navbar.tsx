@@ -1,4 +1,3 @@
-// "use client";
 import {
   Flex,
   UnorderedList,
@@ -80,8 +79,10 @@ const Navbar = () => {
             <Button
               type="button"
               backgroundColor="transparent"
-              color="#1a202c"
+              color={colorMode === "light" ? "#1a202c" : "FFFF"}
               fontWeight="normal"
+              fontSize="17px"
+              className={manrope.className}
               onClick={scrollToCoursesComponent}
             >
               Courses
@@ -167,10 +168,12 @@ const Navbar = () => {
 
             <ListItem py="5">
               <Button
-                type="button" 
+                type="button"
                 backgroundColor="transparent"
-                color="#1a202c"
+                color={colorMode === "light" ? "#1a202c" : "FFFF"}
                 fontWeight="normal"
+                fontSize="17px"
+                className={manrope.className}
                 onClick={scrollToCoursesComponent}
               >
                 Courses
