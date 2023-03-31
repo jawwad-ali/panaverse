@@ -77,9 +77,10 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="#" onClick={scrollToCoursesComponent}>
+            {/* <Link href="#courses" onClick={scrollToCoursesComponent}>
               Courses
-            </Link>
+            </Link> */} 
+            <Button type='button' onClick={scrollToCoursesComponent}>Courses</Button>
           </ListItem>
 
           <ListItem>
