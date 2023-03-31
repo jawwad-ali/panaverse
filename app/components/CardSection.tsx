@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import Link from "next/link";
+import Link from "next/link"; 
 
 interface CardProps {
   quarter: string;
@@ -28,7 +28,7 @@ const roboto = Roboto({
 });
 
 const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
-  return (
+  return ( 
     <>
       <Card
         margin={1}

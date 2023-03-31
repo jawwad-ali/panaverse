@@ -1,8 +1,8 @@
 // "use client";
 import {
   Flex,
-  ListItem,
   UnorderedList,
+  ListItem,
   Button,
   Box,
   IconButton,
@@ -77,7 +77,7 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="#courses" onClick={scrollToCoursesComponent}>
+            <Link href="#" onClick={scrollToCoursesComponent}>
               Courses
             </Link>
           </ListItem>
