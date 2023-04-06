@@ -24,7 +24,12 @@ const roboto = Roboto({
 });
 
 const Quarterone = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+
+  // Open the page from the top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [isInView1, setIsInView1] = useState(false);
   const [isInView2, setIsInView2] = useState(false);

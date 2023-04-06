@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { Yantramanav } from "@next/font/google";
-
+ 
 import { Heading, Box, Text, Flex } from "@chakra-ui/react";
 
-import CardSection from "./CardSection";
+import CardSection from "./CardSection"; 
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -50,7 +50,7 @@ const Offer = () => {
       {/* Common courses */}
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
-        textAlign={"center"}
+        textAlign={"center"} 
         mb={2}
       >
         <Text
@@ -61,7 +61,7 @@ const Offer = () => {
           _after={{
             content: "''",
             width: "full",
-            height: "10%",
+            height: "10%", 
             position: "absolute",
             bottom: 1,
             left: 0,

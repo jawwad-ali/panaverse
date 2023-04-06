@@ -28,12 +28,16 @@ const roboto = Roboto({
 const Quarterthree = () => {
   const { colorMode } = useColorMode();
 
+  // Open the page from the top
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [isInView1, setIsInView1] = useState(false);
 
   const { ref: ref1, inView: inView1 } = useInView({
     threshold: 0.2,
   });
-
 
   useEffect(() => {
     if (inView1) {

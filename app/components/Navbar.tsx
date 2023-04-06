@@ -11,6 +11,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
+import { usePathname } from "next/navigation";
+
 import Logo from "../../assets/panaverse-logo.webp";
 import LogoForDark from "../../assets/dark_theme_logo.jpg";
 
@@ -26,6 +28,8 @@ const manrope = Manrope({
 });
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const [display, setDisplay] = useState("none");
 
   const { colorMode, toggleColorMode } = useColorMode();
@@ -46,7 +50,13 @@ const Navbar = () => {
           </Link>
         ) : (
           <Link href="/">
-            <Image src={LogoForDark} alt="logo" height={"60"} width={"60"} />
+            <Image
+              style={{ mixBlendMode: "color" }}
+              src={LogoForDark}
+              alt="logo"
+              height={"60"}
+              width={"60"}
+            />
           </Link>
         )}
       </Flex>
@@ -75,19 +85,21 @@ const Navbar = () => {
             <Link href="/">Web 3.0</Link>
           </ListItem>
 
-          <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Button
-              type="button"
-              backgroundColor="transparent"
-              color={colorMode === "light" ? "#1a202c" : "FFFF"}
-              fontWeight="normal"
-              fontSize="17px"
-              className={manrope.className}
-              onClick={scrollToCoursesComponent}
-            >
-              Courses
-            </Button>
-          </ListItem>
+          {pathname === "/" && (
+            <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
+              <Button
+                type="button"
+                backgroundColor="transparent"
+                color={colorMode === "light" ? "#1a202c" : "FFFF"}
+                fontWeight="normal"
+                fontSize="17px"
+                className={manrope.className}
+                onClick={scrollToCoursesComponent}
+              >
+                Courses
+              </Button>
+            </ListItem>
+          )}
 
           <ListItem>
             <Link href="https://www.piaic.org/">
