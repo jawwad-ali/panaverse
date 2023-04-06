@@ -7,6 +7,8 @@ import {
   UnorderedList,
   Link,
   useColorMode,
+  HStack,
+  Icon,
 } from "@chakra-ui/react";
 
 import { useEffect, useState } from "react";
@@ -14,6 +16,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 import { Yantramanav, Roboto } from "@next/font/google";
+import { FaArrowRight } from "react-icons/fa";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -26,7 +29,7 @@ const roboto = Roboto({
 });
 
 const Quartertwo = () => {
-  const { colorMode } = useColorMode(); 
+  const { colorMode } = useColorMode();
 
   // Open the page from the top
   useEffect(() => {
@@ -170,24 +173,49 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://beta.nextjs.org/docs">
-                Next 13 Official Documentation
-                <br />
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://beta.reactjs.org/learn">
-                Latest Learn React Official Website
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://github.com/panaverse/learn-nextjs">
-                Learn Next.js 13 Learning Repo
-              </Link>
-            </ListItem>
-          </UnorderedList>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              className={roboto.className}
+              listStyleType="none"
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://beta.nextjs.org/docs">
+                  Next 13 Official Documentation
+                  <br />
+                </Link>
+              </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://beta.reactjs.org/learn">
+                  Latest Learn React Official Website
+                </Link>
+              </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://github.com/panaverse/learn-nextjs">
+                  Learn Next.js 13 Learning Repo
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Two  */}
@@ -213,21 +241,40 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://www.freecodecamp.org/news/css-flexbox-complete-guide/">
-                CSS Flexbox Explained – Complete Guide to Flexible Containers
-                and Flex Items
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              listStyleType="none"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.freecodecamp.org/news/css-flexbox-complete-guide/">
+                  CSS Flexbox Explained – Complete Guide to Flexible Containers
+                  and Flex Items
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://chakra-ui.com/getting-started">
-                Chakra UI Docs
-                <br />
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://chakra-ui.com/getting-started">
+                  Chakra UI Docs
+                  <br />
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Three */}
@@ -253,29 +300,54 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://www.amazon.com/Designing-Prototyping-Interfaces-Figma-interactive/dp/180056418X/ref=sr_1_1_sspa">
-                Designing and Prototyping Interfaces with Figma: Learn essential
-                UX/UI design principles by creating interactive prototypes for
-                mobile, tablet, and desktop by Fabio Staiano
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              listStyleType="none"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.amazon.com/Designing-Prototyping-Interfaces-Figma-interactive/dp/180056418X/ref=sr_1_1_sspa">
+                  Designing and Prototyping Interfaces with Figma: Learn
+                  essential UX/UI design principles by creating interactive
+                  prototypes for mobile, tablet, and desktop by Fabio Staiano
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://www.figma.com/community/file/768809027799962739">
-                Figma Design Kit for TailwindCSS
-                <br />
-              </Link>
-            </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.figma.com/community/file/768809027799962739">
+                  Figma Design Kit for TailwindCSS
+                  <br />
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://www.figma.com/community/file/971408767069651759">
-                Chakra UI Figma Kit
-                <br />
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.figma.com/community/file/971408767069651759">
+                  Chakra UI Figma Kit
+                  <br />
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Four */}
@@ -301,13 +373,26 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://nextjs.org/docs/api-routes/introduction">
-                API Routes
-              </Link> 
-            </ListItem>
-          </UnorderedList>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              listStyleType="none"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://nextjs.org/docs/api-routes/introduction">
+                  API Routes
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* FIve */}
@@ -332,19 +417,39 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://codevoweb.com/build-a-trpc-crud-api-example-with-next-js/">
-                Build a tRPC CRUD API Example with Next.js
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              listStyleType="none"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://codevoweb.com/build-a-trpc-crud-api-example-with-next-js/">
+                  Build a tRPC CRUD API Example with Next.js
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/">
-                Stop building REST APIs for your Next.js apps, use tRPC instead
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/">
+                  Stop building REST APIs for your Next.js apps, use tRPC
+                  instead
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Six */}
@@ -370,25 +475,50 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres">
-                Start from scratch with relational databases
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              listStyleType="none"
+              mt="5"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres">
+                  Start from scratch with relational databases
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://www.youtube.com/watch?v=5hzZtqCNQKk">
-                SQL For Beginners Video Tutorial
-              </Link>
-            </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.youtube.com/watch?v=5hzZtqCNQKk">
+                  SQL For Beginners Video Tutorial
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://www.freecodecamp.org/news/dbms-and-sql-basics/">
-                Database Management Systems and SQL – Tutorial for Beginners
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.freecodecamp.org/news/dbms-and-sql-basics/">
+                  Database Management Systems and SQL – Tutorial for Beginners
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Seven */}
@@ -413,13 +543,26 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/ ">
-                Modern CSS with Tailwind, Second Edition by Noel Rappin
-              </Link>
-            </ListItem>
-          </UnorderedList>
+          <HStack>
+            <UnorderedList
+              listStyleType="none"
+              mt="5"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/ ">
+                  Modern CSS with Tailwind, Second Edition by Noel Rappin
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Eight */}
@@ -445,25 +588,50 @@ const Quartertwo = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link href="https://www.youtube.com/watch?v=BujE_tik5r8">
-                What is AWS Application Composer?
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              listStyleType="none"
+              mt="5"
+              className={roboto.className}
+              spacing="2"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.youtube.com/watch?v=BujE_tik5r8">
+                  What is AWS Application Composer?
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://www.youtube.com/watch?v=p411uh363jQ ">
-                Event-driven apps with AWS Application Composer
-              </Link>
-            </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://www.youtube.com/watch?v=p411uh363jQ ">
+                  Event-driven apps with AWS Application Composer
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://aws.amazon.com/application-composer/">
-                Visually design and build serverless applications quickly
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link href="https://aws.amazon.com/application-composer/">
+                  Visually design and build serverless applications quickly
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
       </Box>
     </Box>

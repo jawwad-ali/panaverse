@@ -178,19 +178,21 @@ const Navbar = () => {
               <Link href="/">Web 3.0</Link>
             </ListItem>
 
-            <ListItem py="5">
-              <Button
-                type="button"
-                backgroundColor="transparent"
-                color={colorMode === "light" ? "#1a202c" : "FFFF"}
-                fontWeight="normal"
-                fontSize="17px"
-                className={manrope.className}
-                onClick={scrollToCoursesComponent}
-              >
-                Courses
-              </Button>
-            </ListItem>
+            {pathname === "/" && (
+              <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
+                <Button
+                  type="button"
+                  backgroundColor="transparent"
+                  color={colorMode === "light" ? "#1a202c" : "FFFF"}
+                  fontWeight="normal"
+                  fontSize="17px"
+                  className={manrope.className} 
+                  onClick={scrollToCoursesComponent}
+                >
+                  Courses
+                </Button>
+              </ListItem>
+            )}
 
             <ListItem py="5">
               <Link href="https://www.piaic.org/">

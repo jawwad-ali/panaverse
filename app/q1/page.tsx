@@ -1,13 +1,17 @@
 "use client";
 import {
   Box,
-  Heading,
+  Heading, 
   Text,
   ListItem,
   UnorderedList,
+  HStack,
+  Icon,
   Link,
   useColorMode,
 } from "@chakra-ui/react";
+
+import { FaArrowRight } from "react-icons/fa";
 
 import { Yantramanav, Roboto } from "@next/font/google";
 import { useEffect, useState } from "react";
@@ -144,27 +148,43 @@ const Quarterone = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link
-                href="
-                https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6 
-                "
-              >
-                Learn HTML by Hira Khan (Watch Recorded Videos on Youtube){" "}
-                <br />
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="
+          <HStack>
+            <UnorderedList mt="5" className={roboto.className} spacing="2">
+              <ListItem listStyleType="none" ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  href="https://www.youtube.com/playlist?list=PLKvqnz8z1zWQ3BALy86tIXICkG874wAc6"
+                  target="_blank"
+                >
+                  Learn HTML by Hira Khan (Watch Recorded Videos on Youtube){" "}
+                  <br />
+                </Link>
+              </ListItem>
+
+              <ListItem listStyleType="none" ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  href="
                 https://www.youtube.com/playlist?list=PLKvqnz8z1zWQSWIen_zUSEBmtqzPLuRob 
                 "
-              >
-                Learn CSS by Hira Khan (Watch Recorded Videos on Youtube) <br />
-              </Link>
-            </ListItem>
-          </UnorderedList>
+                  target="_blank"
+                >
+                  Learn CSS by Hira Khan (Watch Recorded Videos on Youtube){" "}
+                  <br />
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Two  */}
@@ -190,36 +210,64 @@ const Quarterone = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" className={roboto.className} spacing="2">
-            <ListItem>
-              <Link
-                href="
+          <HStack>
+            <UnorderedList
+              mt="5"
+              className={roboto.className}
+              spacing="2"
+              listStyleType="none"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  href="
                 https://docs.google.com/presentation/d/12C1s4UBTlR9nZNEkRE6aAuGeRA3s92jx-8nJKo9jdH4/edit?usp=sharing 
                 "
-              >
-                Introduction to Panaverse DAO
-                <br />
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="
+                  target="_blank"
+                >
+                  Introduction to Panaverse DAO
+                  <br />
+                </Link>
+              </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="
                 https://docs.google.com/presentation/d/1FSbr9aJwO0-fmZHqWy_eHO2N_jwJLmQCy4cG8rd4ctw/edit?usp=sharing 
                 "
-              >
-                Web 3.0 User Guide
-              </Link>
-            </ListItem>
+                >
+                  Web 3.0 User Guide
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link
-                href="
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="
                 https://docs.google.com/presentation/d/1ADk87hQ0Etr2PfmN9XH7TQ0CHl6XSP_7JWNUbzPdDNc/edit?usp=sharing"
-              >
-                Virtual and Augmented Metaverse User Guide
-              </Link>
-            </ListItem>
-          </UnorderedList>
+                >
+                  Virtual and Augmented Metaverse User Guide
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Three  */}
@@ -244,51 +292,77 @@ const Quarterone = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" spacing="2" className={roboto.className}>
-            <ListItem>
-              <Link href="https://docs.google.com/presentation/d/1-7Kb3laJjJ68mOTF9v0fHImk5vTol0CeE43Sg8hoUXQ/edit?usp=sharing">
-                TypeScript Presentation
-                <br />
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              spacing="2"
+              className={roboto.className}
+              listStyleType="none"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/presentation/d/1-7Kb3laJjJ68mOTF9v0fHImk5vTol0CeE43Sg8hoUXQ/edit?usp=sharing"
+                >
+                  TypeScript Presentation
+                  <br />
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://github.com/panaverse/typescript-node-projects/blob/main/getting-started-exercises.md">
-                Getting Started Exercises with TypeScript and Node.js
-              </Link>
-            </ListItem>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="https://github.com/panaverse/typescript-node-projects/blob/main/getting-started-exercises.md"
+                >
+                  Getting Started Exercises with TypeScript and Node.js
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              Topics Covered in Quiz:
-              <UnorderedList spacing="2">
-                <ListItem>
-                  Background of JavaScript and How to use JavaScript in Browser
-                </ListItem>
-                <ListItem>
-                  Variables, Primitive data types Analyzing and modifying data
-                  types, and Operators (Chapter 2 of JavaScript from Beginner to
-                  Professional)
-                </ListItem>
-                <ListItem>
-                  Intro to Node.js, .mjs files, Modules, NPM, import, export,
-                  and using external modules with npm
-                </ListItem>
-                <ListItem>
-                  How to accept user input in your Node.js JavaScript programs,
-                  this will allow us to create interactive Node.js console
-                  programs using prompt-sync library. The last example in this
-                  presentation shows you how to use prompt-sync library in your
-                  Node.js programs:
-                </ListItem>
+              <ListItem>
+                Topics Covered in Quiz:
+                <UnorderedList spacing="2">
+                  <ListItem>
+                    Background of JavaScript and How to use JavaScript in
+                    Browser
+                  </ListItem>
+                  <ListItem>
+                    Variables, Primitive data types Analyzing and modifying data
+                    types, and Operators (Chapter 2 of JavaScript from Beginner
+                    to Professional)
+                  </ListItem>
+                  <ListItem>
+                    Intro to Node.js, .mjs files, Modules, NPM, import, export,
+                    and using external modules with npm
+                  </ListItem>
+                  <ListItem>
+                    How to accept user input in your Node.js JavaScript
+                    programs, this will allow us to create interactive Node.js
+                    console programs using prompt-sync library. The last example
+                    in this presentation shows you how to use prompt-sync
+                    library in your Node.js programs:
+                  </ListItem>
 
-                <ListItem>
-                  Using Concurrency, Callbacks, Promises, async / await, and
-                  Event loop (chapter 13 of JavaScript from Beginner to
-                  Professional)
-                </ListItem>
-              </UnorderedList>
-            </ListItem>
-          </UnorderedList>
+                  <ListItem>
+                    Using Concurrency, Callbacks, Promises, async / await, and
+                    Event loop (chapter 13 of JavaScript from Beginner to
+                    Professional)
+                  </ListItem>
+                </UnorderedList>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Four  */}
@@ -314,21 +388,46 @@ const Quarterone = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" spacing="2" className={roboto.className}>
-            <ListItem>
-              <Link href="https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1">
-                Chapters 1-11 of Learning TypeScript: Enhance Your Web
-                Development Skills Using Type-Safe JavaScript
-                <br />
-              </Link>
-            </ListItem>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              spacing="2"
+              className={roboto.className}
+              listStyleType="none"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="https://www.amazon.com/Learning-TypeScript-Development-Type-Safe-JavaScript/dp/1098110331/ref=sr_1"
+                >
+                  Chapters 1-11 of Learning TypeScript: Enhance Your Web
+                  Development Skills Using Type-Safe JavaScript
+                  <br />
+                </Link>
+              </ListItem>
 
-            <ListItem>
-              <Link href="https://github.com/panaverse/learn-typescript">
-                Learning Repository
-              </Link>
-            </ListItem>
-          </UnorderedList>
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="https://github.com/panaverse/learn-typescript"
+                >
+                  Learning Repository
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
 
         {/* Five  */}
@@ -353,15 +452,31 @@ const Quarterone = () => {
             </Text>
           </Heading>
 
-          <UnorderedList mt="5" spacing="2" className={roboto.className}>
-            <ListItem>
-              <Link href="https://profy.dev/article/react-typescript ">
-                Minimal TypeScript Crash Course For React With Interactive Code
-                Exercises
-                <br />
-              </Link>
-            </ListItem>
-          </UnorderedList>
+          <HStack>
+            <UnorderedList
+              mt="5"
+              spacing="2"
+              className={roboto.className}
+              listStyleType="none"
+            >
+              <ListItem ml="-4">
+                <Icon
+                  as={FaArrowRight}
+                  transform="rotate(-45deg)"
+                  mr="2"
+                  fontSize="14px"
+                />
+                <Link
+                  target="_blank"
+                  href="https://profy.dev/article/react-typescript "
+                >
+                  Minimal TypeScript Crash Course For React With Interactive
+                  Code Exercises
+                  <br />
+                </Link>
+              </ListItem>
+            </UnorderedList>
+          </HStack>
         </Box>
       </Box>
     </Box>
