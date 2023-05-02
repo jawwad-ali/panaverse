@@ -24,7 +24,7 @@ const Offer = () => {
       mb="50px"
       // bg='red.200'
       // position="relative"
-      marginTop={{ base: "70px" }}
+      marginTop={{ base: "58px" }}
       // top={{ base: "50px", md: 0, xl: 2 }}
       maxW="100%"
     >
