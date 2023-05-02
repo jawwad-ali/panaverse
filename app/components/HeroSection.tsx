@@ -11,7 +11,7 @@ import HeroSectionImg from "../../public/herosection.webp";
 const yantramanav = Yantramanav({
   weight: ["700"],
   subsets: ["latin"],
-}); 
+});
 
 const roboto = Roboto({
   weight: ["400"],
@@ -19,12 +19,11 @@ const roboto = Roboto({
 });
 
 const HeroSection = () => {
-
   return (
-    <SimpleGrid 
-      columns={{ base: 1, md: 1, lg: 2 }} 
+    <SimpleGrid
+      columns={{ base: 1, md: 1, lg: 2 }}
       spacing={{ base: 3, md: 4, lg: 5 }}
-      mx="7" 
+      mx="7"
       height={{ base: "120vh", md: "120vh", lg: "90vh" }}
       mt={{ base: "4", lg: "0" }}
     >
@@ -40,7 +39,7 @@ const HeroSection = () => {
           fontWeight={"normal"}
           lineHeight={"28px"}
           fontSize={{ base: "15px", lg: "16px" }}
-          color={"slategray.100"} 
+          color={"slategray.100"}
         >
           This curriculum is intended for beginners who want to learn software
           development from the ground up. The first three quarters are shared by
@@ -76,10 +75,7 @@ const HeroSection = () => {
         flexDirection="column"
         justifyContent="center"
       >
-        <Image
-          src={HeroSectionImg}
-          alt="Hero Section Image"
-        />
+        <Image src={HeroSectionImg} alt="Hero Section Image" />
       </Box>
     </SimpleGrid>
   );
