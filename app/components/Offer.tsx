@@ -21,10 +21,9 @@ const Offer = () => {
     <Box
       id="courses"
       as="div"
-      // mt={{ base: "150px", md: "0px" }}
       mb="50px"
-      position="relative"
-      maxW={"100%"}
+      marginTop={{ base: "150px", md: 0, xl: 2 }}
+      maxW="100%"
     >
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
@@ -56,6 +55,7 @@ const Offer = () => {
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
         textAlign={"center"}
         mb={2}
+        px={4}
       >
         <Text
           fontWeight="bold"
@@ -71,7 +71,7 @@ const Offer = () => {
             left: 0,
             bg: "green.400",
             zIndex: -1,
-            marginLeft: { base: "40px", md: 0, lg: 0 },
+            marginLeft: { base: "20px", md: 0, lg: 0 },
           }}
         >
           Core Courses (Common in All Specializations):
@@ -81,6 +81,7 @@ const Offer = () => {
         fontSize={{ base: "15px", md: "16px" }}
         textAlign={"center"}
         px={{ base: "6", lg: "0" }}
+        pt={4}
         className={roboto.className}
       >
         Every participant of the program will start by completing the following
@@ -141,6 +142,7 @@ const Offer = () => {
       </Heading>
 
       <Text
+        mt={4}
         px={{ base: "4", md: "16" }}
         fontSize={{ base: "15px", md: "16px" }}
         textAlign={"center"}

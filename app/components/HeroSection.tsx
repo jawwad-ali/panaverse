@@ -27,7 +27,6 @@ const HeroSection = () => {
       mx="7" 
       height={{ base: "120vh", md: "120vh", lg: "90vh" }}
       mt={{ base: "4", lg: "0" }}
-      
     >
       <Flex flexDirection="column" justifyContent="center">
         <Heading as="h1" fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
