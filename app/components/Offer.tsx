@@ -21,7 +21,7 @@ const Offer = () => {
     <Box
       id="courses"
       as="div"
-      mt={{ base: "160px", md: "50px", lg: "100px" }}
+      mt={{ base: "150px", md: "0px" }}
       mb="50px"
       position="relative"
       maxW={"100%"}
@@ -79,7 +79,7 @@ const Offer = () => {
       </Heading>
       <Text
         fontSize={{ base: "15px", md: "16px" }}
-        textAlign={"center"} 
+        textAlign={"center"}
         px={{ base: "6", lg: "0" }}
         className={roboto.className}
       >
