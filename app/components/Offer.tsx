@@ -22,7 +22,7 @@ const Offer = () => {
       id="courses"
       as="div"
       mb="50px"
-      marginTop={{ base: "150px", md: 0, xl: 2 }}
+      marginTop={{  md: 0, xl: 2 }}
       maxW="100%"
     >
       <Heading
