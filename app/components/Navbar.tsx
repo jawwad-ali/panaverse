@@ -27,18 +27,18 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
+// Scroll to the courses component
+export function scrollToCoursesComponent() {
+  const secondComponent = document.getElementById("courses");
+  secondComponent?.scrollIntoView({ behavior: "smooth" });
+}
+
 const Navbar = () => {
   const pathname = usePathname();
 
   const [display, setDisplay] = useState("none");
 
   const { colorMode, toggleColorMode } = useColorMode();
-
-  // Scroll to the courses component
-  function scrollToCoursesComponent() {
-    const secondComponent = document.getElementById("courses");
-    secondComponent?.scrollIntoView({ behavior: "smooth" });
-  }
 
   return (
     <Flex maxW={"100%"} justifyContent={"space-between"} alignItems={"center"}>
@@ -186,7 +186,7 @@ const Navbar = () => {
                   color={colorMode === "light" ? "#1a202c" : "FFFF"}
                   fontWeight="normal"
                   fontSize="17px"
-                  className={manrope.className} 
+                  className={manrope.className}
                   onClick={scrollToCoursesComponent}
                 >
                   Courses

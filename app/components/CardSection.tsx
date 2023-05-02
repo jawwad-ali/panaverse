@@ -36,7 +36,7 @@ const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
         boxShadow="base"
         align="center"
         w={{ base: "100%", lg: "33%" }}
-        mt={4}
+        mt={4} 
       >
         <CardHeader>
           <Heading

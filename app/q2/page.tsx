@@ -187,7 +187,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://beta.nextjs.org/docs">
+                <Link target="_blank" href="https://beta.nextjs.org/docs">
                   Next 13 Official Documentation
                   <br />
                 </Link>
@@ -199,7 +199,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://beta.reactjs.org/learn">
+                <Link target="_blank" href="https://beta.reactjs.org/learn">
                   Latest Learn React Official Website
                 </Link>
               </ListItem>
@@ -210,7 +210,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://github.com/panaverse/learn-nextjs">
+                <Link target="_blank" href="https://github.com/panaverse/learn-nextjs">
                   Learn Next.js 13 Learning Repo
                 </Link>
               </ListItem>
@@ -255,7 +255,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.freecodecamp.org/news/css-flexbox-complete-guide/">
+                <Link target="_blank" href="https://www.freecodecamp.org/news/css-flexbox-complete-guide/">
                   CSS Flexbox Explained – Complete Guide to Flexible Containers
                   and Flex Items
                 </Link>
@@ -268,7 +268,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://chakra-ui.com/getting-started">
+                <Link target="_blank" href="https://chakra-ui.com/getting-started">
                   Chakra UI Docs
                   <br />
                 </Link>
@@ -314,7 +314,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.amazon.com/Designing-Prototyping-Interfaces-Figma-interactive/dp/180056418X/ref=sr_1_1_sspa">
+                <Link target="_blank" href="https://www.amazon.com/Designing-Prototyping-Interfaces-Figma-interactive/dp/180056418X/ref=sr_1_1_sspa">
                   Designing and Prototyping Interfaces with Figma: Learn
                   essential UX/UI design principles by creating interactive
                   prototypes for mobile, tablet, and desktop by Fabio Staiano
@@ -328,7 +328,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.figma.com/community/file/768809027799962739">
+                <Link target="_blank" href="https://www.figma.com/community/file/768809027799962739">
                   Figma Design Kit for TailwindCSS
                   <br />
                 </Link>
@@ -341,7 +341,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.figma.com/community/file/971408767069651759">
+                <Link target="_blank" href="https://www.figma.com/community/file/971408767069651759">
                   Chakra UI Figma Kit
                   <br />
                 </Link>
@@ -387,7 +387,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://nextjs.org/docs/api-routes/introduction">
+                <Link target="_blank" href="https://nextjs.org/docs/api-routes/introduction">
                   API Routes
                 </Link>
               </ListItem>
@@ -431,7 +431,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://codevoweb.com/build-a-trpc-crud-api-example-with-next-js/">
+                <Link target="_blank" href="https://codevoweb.com/build-a-trpc-crud-api-example-with-next-js/">
                   Build a tRPC CRUD API Example with Next.js
                 </Link>
               </ListItem>
@@ -443,7 +443,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/">
+                <Link target="_blank" href="https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps/">
                   Stop building REST APIs for your Next.js apps, use tRPC
                   instead
                 </Link>
@@ -489,7 +489,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres">
+                <Link target="_blank" href="https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres">
                   Start from scratch with relational databases
                 </Link>
               </ListItem>
@@ -501,7 +501,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.youtube.com/watch?v=5hzZtqCNQKk">
+                <Link target="_blank" href="https://www.youtube.com/watch?v=5hzZtqCNQKk">
                   SQL For Beginners Video Tutorial
                 </Link>
               </ListItem>
@@ -513,7 +513,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.freecodecamp.org/news/dbms-and-sql-basics/">
+                <Link target="_blank" href="https://www.freecodecamp.org/news/dbms-and-sql-basics/">
                   Database Management Systems and SQL – Tutorial for Beginners
                 </Link>
               </ListItem>
@@ -557,7 +557,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/ ">
+                <Link target="_blank" href="https://pragprog.com/titles/tailwind2/modern-css-with-tailwind-second-edition/ ">
                   Modern CSS with Tailwind, Second Edition by Noel Rappin
                 </Link>
               </ListItem>
@@ -602,7 +602,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.youtube.com/watch?v=BujE_tik5r8">
+                <Link target="_blank" href="https://www.youtube.com/watch?v=BujE_tik5r8">
                   What is AWS Application Composer?
                 </Link>
               </ListItem>
@@ -614,7 +614,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://www.youtube.com/watch?v=p411uh363jQ ">
+                <Link target="_blank" href="https://www.youtube.com/watch?v=p411uh363jQ ">
                   Event-driven apps with AWS Application Composer
                 </Link>
               </ListItem>
@@ -626,7 +626,7 @@ const Quartertwo = () => {
                   mr="2"
                   fontSize="14px"
                 />
-                <Link href="https://aws.amazon.com/application-composer/">
+                <Link target="_blank" href="https://aws.amazon.com/application-composer/">
                   Visually design and build serverless applications quickly
                 </Link>
               </ListItem>

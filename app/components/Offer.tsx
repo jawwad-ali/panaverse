@@ -1,23 +1,27 @@
 "use client";
 import React from "react";
-import { Yantramanav } from "@next/font/google";
- 
+import { Roboto, Yantramanav } from "@next/font/google";
+
 import { Heading, Box, Text, Flex } from "@chakra-ui/react";
 
-import CardSection from "./CardSection"; 
+import CardSection from "./CardSection";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
   subsets: ["latin"],
 });
 
+const roboto = Roboto({
+  weight: ["400"],
+  subsets: ["latin"],
+});
+
 const Offer = () => {
   return (
-    // <div id="courses">
     <Box
       id="courses"
       as="div"
-      mt={{ base: "200px", lg: "100px" }}
+      mt={{ base: "160px", md: "50px", lg: "100px" }}
       mb="50px"
       position="relative"
       maxW={"100%"}
@@ -50,7 +54,7 @@ const Offer = () => {
       {/* Common courses */}
       <Heading
         fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
-        textAlign={"center"} 
+        textAlign={"center"}
         mb={2}
       >
         <Text
@@ -61,7 +65,7 @@ const Offer = () => {
           _after={{
             content: "''",
             width: "full",
-            height: "10%", 
+            height: "10%",
             position: "absolute",
             bottom: 1,
             left: 0,
@@ -74,9 +78,10 @@ const Offer = () => {
         </Text>
       </Heading>
       <Text
-        fontSize={{ base: "15px", lg: "16px" }}
-        textAlign={"center"}
+        fontSize={{ base: "15px", md: "16px" }}
+        textAlign={"center"} 
         px={{ base: "6", lg: "0" }}
+        className={roboto.className}
       >
         Every participant of the program will start by completing the following
         three core courses:
@@ -136,9 +141,10 @@ const Offer = () => {
       </Heading>
 
       <Text
-        px={{ base: "4", md: "0" }}
-        fontSize={{ base: "15px", lg: "16px" }}
+        px={{ base: "4", md: "16" }}
+        fontSize={{ base: "15px", md: "16px" }}
         textAlign={"center"}
+        className={roboto.className}
       >
         After completing the first three quarters the participants will select
         one or more specializations consisting of two courses each:

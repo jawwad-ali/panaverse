@@ -11,6 +11,10 @@ import { Roboto, Yantramanav } from "@next/font/google";
 import Link from "next/link";
 import React from "react";
 
+import { scrollToCoursesComponent } from "./Navbar";
+
+import { usePathname } from "next/navigation";
+
 const yantramanav = Yantramanav({
   weight: ["700"],
   subsets: ["latin"],
@@ -22,6 +26,8 @@ const roboto = Roboto({
 });
 
 const Footer = () => {
+  const pathname = usePathname();
+
   return (
     <Box maxW="100%" bgColor="blackAlpha.200">
       <SimpleGrid
@@ -51,7 +57,14 @@ const Footer = () => {
               about us
             </Text>
           </Heading>
-          <Text className={roboto.className} pt="4" fontSize="15px">
+          <Text
+            className={roboto.className}
+            pt="4"
+            fontSize="15px"
+            mt="5"
+            maxWidth="230px"
+            lineHeight="26px"
+          >
             The Future of the Web is Web 3.0, Metaverse, and Edge Computing.
             Panaverse DAO is a movement to spread these technolgies globally. It
             is community of Web 3 and Metaverse developers, designers, trainers,
@@ -80,7 +93,7 @@ const Footer = () => {
             </Text>
           </Heading>
 
-          <UnorderedList listStyleType={"none"} fontSize="15px">
+          <UnorderedList ml="0" listStyleType={"none"} fontSize="15px" mt="5">
             {/* Items */}
             <ListItem
               cursor="pointer"
@@ -109,14 +122,17 @@ const Footer = () => {
               <Link href="/">About Us</Link>
             </ListItem>
 
-            <ListItem
-              cursor="pointer"
-              py="3"
-              textDecoration="underline"
-              _hover={{ color: "#08d88d", transition: "0.2s ease" }}
-            >
-              <Link href="/">Courses</Link>
-            </ListItem>
+            {pathname === "/" && (
+              <ListItem
+                onClick={scrollToCoursesComponent}
+                cursor="pointer"
+                py="3"
+                textDecoration="underline"
+                _hover={{ color: "#08d88d", transition: "0.2s ease" }}
+              >
+                <Link href="/">Courses</Link>
+              </ListItem>
+            )}
           </UnorderedList>
         </Box>
 
@@ -141,7 +157,7 @@ const Footer = () => {
             </Text>
           </Heading>
 
-          <UnorderedList listStyleType={"none"} fontSize="15px">
+          <UnorderedList listStyleType={"none"} fontSize="15px" ml="0" mt="5">
             {/* Items */}
             <ListItem
               cursor="pointer"
@@ -204,43 +220,17 @@ const Footer = () => {
             </Text>
           </Heading>
 
-          <UnorderedList listStyleType={"none"} fontSize="15px">
+          <UnorderedList listStyleType={"none"} fontSize="15px" ml="0" mt="5">
             {/* Items */}
-            <ListItem
-              cursor="pointer"
-              py="3"
-              textDecoration="underline"
-              _hover={{ color: "#08d88d", transition: "0.2s ease" }}
-            >
-              Artificial Intelligence
-            </ListItem>
+            <ListItem py="3">Artificial Intelligence</ListItem>
 
-            <ListItem
-              cursor="pointer"
-              py="3"
-              textDecoration="underline"
-              _hover={{ color: "#08d88d", transition: "0.2s ease" }}
-            >
+            <ListItem py="3">
               Cloud Native and Mobile and Web Computing
             </ListItem>
 
-            <ListItem
-              cursor="pointer"
-              py="3"
-              textDecoration="underline"
-              _hover={{ color: "#08d88d", transition: "0.2s ease" }}
-            >
-              Internet of things
-            </ListItem>
+            <ListItem py="3">Internet of things</ListItem>
 
-            <ListItem
-              cursor="pointer"
-              py="3"
-              textDecoration="underline"
-              _hover={{ color: "#08d88d", transition: "0.2s ease" }}
-            >
-              Blockchain
-            </ListItem>
+            <ListItem py="3">Blockchain</ListItem>
           </UnorderedList>
         </Box>
       </SimpleGrid>

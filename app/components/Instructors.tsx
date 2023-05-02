@@ -44,7 +44,7 @@ const Instructors = () => {
 
       <Text
         className={roboto.className}
-        fontSize={{ base: "15px", lg: "16px" }}
+        fontSize={{ base: "15px", md: "16px" }}
         textAlign={"center"}
         px={{ base: "6", lg: "0" }}
         pt={3}
