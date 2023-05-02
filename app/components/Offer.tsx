@@ -21,7 +21,7 @@ const Offer = () => {
     <Box
       id="courses"
       as="div"
-      mt={{ base: "150px", md: "0px" }}
+      // mt={{ base: "150px", md: "0px" }}
       mb="50px"
       position="relative"
       maxW={"100%"}
