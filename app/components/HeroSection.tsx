@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 
-import HeroSectionImg from "../../public/herosection.webp";
+import HeroSectionImg from "../../public/herosection.webp"; 
 
 const yantramanav = Yantramanav({
   weight: ["700"],
