@@ -1,12 +1,12 @@
 "use client";
 import { Box, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 
-import React from "react";
+import CountUp from "react-countup";
 
 import PresidentImg from "../../assets/president.jpg";
 import { Roboto, Yantramanav } from "@next/font/google";
 
-import { BsFillPeopleFill, BsBuildings, BsPeopleFill } from "react-icons/bs";
+import { BsFillPeopleFill, BsBuildings } from "react-icons/bs";
 
 const yantramanav = Yantramanav({
   weight: ["700"],
@@ -81,6 +81,7 @@ const About = () => {
       <SimpleGrid
         mx="auto"
         mt="50px"
+        mb="15px"
         px="25px"
         w={{ base: "100%", lg: "75%" }}
         columns={{ base: 1, md: 1, lg: 2 }}
@@ -112,7 +113,7 @@ const About = () => {
               color="#252525"
               className={yantramanav.className}
             >
-              5,000 + Students
+              <CountUp start={0} end={5000} duration={2} />+ Students
             </Text>
           </Flex>
         </Flex>
@@ -143,7 +144,7 @@ const About = () => {
               color="#252525"
               className={yantramanav.className}
             >
-              25+ Cities
+              <CountUp start={0} end={25} duration={2} />+ Cities
             </Text>
           </Flex>
         </Flex>
