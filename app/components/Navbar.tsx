@@ -82,10 +82,7 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            {/* <Link href="/about">About Us</Link>   */}
-            <button type="button" onClick={() => router.push("/about")}>
-              About Page
-            </button>
+            <Link href="/about">About Us</Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
@@ -95,6 +92,7 @@ const Navbar = () => {
           {pathname === "/" && (
             <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
               <Button
+                background="none"
                 type="button"
                 backgroundColor="transparent"
                 color={colorMode === "light" ? "#1a202c" : "FFFF"}
@@ -102,6 +100,9 @@ const Navbar = () => {
                 fontSize="17px"
                 className={manrope.className}
                 onClick={scrollToCoursesComponent}
+                _hover={{
+                  background:'none'
+                }}
               >
                 Courses
               </Button>

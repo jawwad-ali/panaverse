@@ -5,9 +5,9 @@ import Navbar from "./components/Navbar";
 import theme from "@/theme";
 import { ColorModeScript } from "@chakra-ui/react";
 
-import Footer from "./components/Footer"; 
- 
-export default function RootLayout({ 
+import Footer from "./components/Footer";
+
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -16,10 +16,10 @@ export default function RootLayout({
     <html>
       <head></head>
       <body>
+        <Navbar />
         <ChakraWrapper>
           {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
 
-          <Navbar />
           {children}
           <Footer />
           {/* <Main />*/}
