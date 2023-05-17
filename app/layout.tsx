@@ -16,14 +16,11 @@ export default function RootLayout({
     <html>
       <head></head>
       <body>
-        <Navbar />
         <ChakraWrapper>
           {/* <ColorModeScript initialColorMode={theme.config.initialColorMode} /> */}
-
+          <Navbar />
           {children}
           <Footer />
-          {/* <Main />*/}
-          {/* <NextScript />  */}
         </ChakraWrapper>
       </body>
     </html>

@@ -11,10 +11,9 @@ export default function Home() {
     <div
       style={{ maxWidth: "1300px", marginLeft: "auto", marginRight: "auto" }}
     >
-      Hello Home Page.
-      {/* <HeroSection /> */}
-      {/* <Offer /> */}
-      {/* <Instructors /> */}
+      <HeroSection />
+      <Offer />
+      <Instructors />
     </div>
     // </Box>
   );
