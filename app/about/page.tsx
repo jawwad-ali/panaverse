@@ -1,7 +1,7 @@
 import AboutComponent from "../components/about/AboutComponent";
 
 export async function generateStaticParams() {
-  const name = "about";
+  const name: string[] = ["about"];
   return name;
 }
 
