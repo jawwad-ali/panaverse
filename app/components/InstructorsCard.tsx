@@ -1,17 +1,12 @@
 "use client";
 
-import { Box, Icon, IconButton, Text } from "@chakra-ui/react";
+import { Box, Icon, Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 
-import { Yantramanav, Roboto } from "@next/font/google";
+import { Roboto } from "@next/font/google";
 import { Link } from "@chakra-ui/react";
 
 import { FaLinkedin } from "react-icons/fa";
-
-const yantramanav = Yantramanav({
-  weight: ["700"],
-  subsets: ["latin"],
-});
 
 const roboto = Roboto({
   weight: ["400"],
@@ -45,7 +40,9 @@ const InstructorsCard = ({
         borderRadius="full"
         objectFit="cover"
         src={picture}
-        alt="Dan Abramov"
+        alt="Instructor"
+        width={{ base: "100", md: "150" }}
+        height={{ base: "100", md: "150" }}
       />
       <Text
         className={roboto.className}
