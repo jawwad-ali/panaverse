@@ -54,7 +54,7 @@ const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
         </CardBody>
         <CardFooter>
           {/* <Button colorScheme="green" className={roboto.className}> */}
-            <Link href={`${link}`}>View Details</Link>
+            <Link href={`/${link}`}>View Details</Link>
           {/* </Button> */}
         </CardFooter>
       </Card>
