@@ -12,6 +12,8 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
+import { useRouter } from "next/navigation";
+
 import { usePathname } from "next/navigation";
 
 import Logo from "../../assets/panaverse-logo.webp";
@@ -35,6 +37,7 @@ export function scrollToCoursesComponent() {
 }
 
 const Navbar = () => {
+  const router = useRouter();
   const pathname = usePathname();
 
   const [display, setDisplay] = useState("none");
@@ -79,7 +82,10 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/about">About Us</Link>
+            <Link href="/about">About Us</Link>  
+            {/* <button type="button" onClick={() => router.push("/about")}>
+              About Page
+            </button> */}
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
