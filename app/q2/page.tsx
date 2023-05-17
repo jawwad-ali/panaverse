@@ -28,6 +28,12 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+// params
+export async function generateStaticParams() {
+  const name: string[] = ["q2"];
+  return name;
+}
+
 const Quartertwo = () => {
   const { colorMode } = useColorMode();
 

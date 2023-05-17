@@ -5,8 +5,8 @@ export async function generateStaticParams() {
   return name;
 }
 
-// const About = () => {
-const About = ({ params }: { params: { name: string } }) => {
+// const About = ({ params }: { params: { name: string } }) => {
+const About = () => {
   return <AboutComponent />;
 };
 
