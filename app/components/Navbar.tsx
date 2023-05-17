@@ -82,10 +82,10 @@ const Navbar = () => {
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/about">About Us</Link>  
-            {/* <button type="button" onClick={() => router.push("/about")}>
+            {/* <Link href="/about">About Us</Link>   */}
+            <button type="button" onClick={() => router.push("/about")}>
               About Page
-            </button> */}
+            </button>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
