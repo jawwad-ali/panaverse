@@ -1,6 +1,12 @@
 import AboutComponent from "../components/about/AboutComponent";
 
-const About = () => {
+export async function generateStaticParams() {
+  const name: string = "about";
+  return name;
+}
+
+// const About = ({ params }: { params: { name: string } }) => {
+  const About = () => {
   return <AboutComponent />;
 };
 

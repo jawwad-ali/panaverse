@@ -101,7 +101,7 @@ const Navbar = () => {
                 className={manrope.className}
                 onClick={scrollToCoursesComponent}
                 _hover={{
-                  background:'none'
+                  background: "none",
                 }}
               >
                 Courses
@@ -179,7 +179,7 @@ const Navbar = () => {
             </ListItem>
 
             <ListItem py="5">
-              <Link href="about">About Us</Link>
+              <Link href="/about">About Us</Link>
             </ListItem>
 
             <ListItem py="5">
@@ -196,6 +196,9 @@ const Navbar = () => {
                   fontSize="17px"
                   className={manrope.className}
                   onClick={scrollToCoursesComponent}
+                  _hover={{
+                    background: "none",
+                  }}
                 >
                   Courses
                 </Button>
