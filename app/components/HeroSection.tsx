@@ -3,7 +3,7 @@ import { Yantramanav, Roboto } from "@next/font/google";
 
 import { Heading, Box, Text, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
-
+ 
 import Image from "next/image";
 
 import HeroSectionImg from "../../public/herosection.webp"; 
@@ -13,7 +13,7 @@ const yantramanav = Yantramanav({
   subsets: ["latin"],
 });
 
-const roboto = Roboto({
+const roboto = Roboto({ 
   weight: ["400"],
   subsets: ["latin"],
 });
@@ -75,7 +75,7 @@ const HeroSection = () => {
         flexDirection="column"
         justifyContent="center"
       >
-        <Image src={HeroSectionImg} alt="Hero Section Image" />
+        <Image src={HeroSectionImg} alt="Hero Section Image" loading="eager" />
       </Box>
     </SimpleGrid>
   );

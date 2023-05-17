@@ -1,5 +1,4 @@
-"use client";
-
+// 'use client'
 import { Box } from "@chakra-ui/react";
 
 import HeroSection from "./components/HeroSection";
@@ -8,10 +7,14 @@ import Offer from "./components/Offer";
 
 export default function Home() {
   return (
-    <Box maxWidth="1300px" mx="auto">
+    // <Box maxWidth="1300px" mx="auto">
+    <div
+      style={{ maxWidth: "1300px", marginLeft: "auto", marginRight: "auto" }}
+    >
       <HeroSection />
       <Offer />
       <Instructors />
-    </Box>
+    </div>
+    // </Box>
   );
 }
