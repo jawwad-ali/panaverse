@@ -6,9 +6,10 @@ import {
   CardHeader,
   Heading,
   Text,
+  Link,
 } from "@chakra-ui/react";
 
-import Link from "next/link";
+import NextLink from "next/link";
 
 interface CardProps {
   quarter: string;
@@ -53,9 +54,12 @@ const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
           <Text className={roboto.className}>{oneLiner}</Text>
         </CardBody>
         <CardFooter>
-          <Button colorScheme="green" className={roboto.className}>
-            <Link href={link}>View Details</Link>
-          </Button>
+          {/* <Button colorScheme="green" className={roboto.className}> */}
+          {/* <Link href={link}>View Details</Link> */}
+          <Link as={NextLink} href={link}>
+            View Details 
+          </Link>
+          {/* </Button> */}
         </CardFooter>
       </Card>
     </>

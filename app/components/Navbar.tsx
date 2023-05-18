@@ -6,10 +6,12 @@ import {
   Button,
   Box,
   IconButton,
+  Link,
   useColorMode,
 } from "@chakra-ui/react";
 
-import Link from "next/link";
+import NextLink from "next/link";
+
 import Image from "next/image";
 
 import { useRouter } from "next/navigation";
@@ -78,11 +80,17 @@ const Navbar = () => {
         >
           {/* Items */}
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/">Home</Link>
+            {/* <Link href="/">Home</Link> */}
+            <Link as={NextLink} href="/">
+              Home
+            </Link> 
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
-            <Link href="/about">About Us</Link>
+            {/* <Link href="/about">About Us</Link> */}
+            <Link as={NextLink} href="/about">
+              About
+            </Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>
