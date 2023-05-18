@@ -5,7 +5,7 @@ import {
   CardFooter,
   CardHeader,
   Heading,
-  Text,
+  Text, 
   Link,
 } from "@chakra-ui/react";
 
@@ -32,7 +32,7 @@ const CardSection = ({ quarter, oneLiner, link }: CardProps) => {
   return (
     <>
       <Card
-        margin={1}
+        margin={1} 
         flex="1"
         boxShadow="base"
         align="center"

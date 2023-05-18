@@ -89,17 +89,18 @@ const Offer = () => {
       </Text>
 
       {/* Card Section */}
-      <Flex
-        justifyContent="space-around"
+      <Flex 
+        justifyContent="space-around" 
         direction={{ base: "column", lg: "row" }}
-        mt={4}
+        mt={4} 
         w="100%"
         px={{ base: "6", lg: "4" }}
-      >
+      > 
         <CardSection
           quarter="Quarter I (Core)"
           oneLiner="CS-101: Object-Oriented Programming using TypeScript"
-          link="q1"
+          link={`/q1`}
+          // link="q1"
         />
         <CardSection
           quarter="Quarter II (Core)"
@@ -239,7 +240,7 @@ const Offer = () => {
             link="#"
           />
         </Box>
-      </Box>
+      </Box> 
     </Box>
     // </div>
   );

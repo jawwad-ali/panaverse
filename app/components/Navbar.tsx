@@ -5,7 +5,7 @@ import {
   ListItem,
   Button,
   Box,
-  IconButton,
+  IconButton, 
   Link,
   useColorMode,
 } from "@chakra-ui/react";
@@ -13,8 +13,6 @@ import {
 import NextLink from "next/link";
 
 import Image from "next/image";
-
-import { useRouter } from "next/navigation";
 
 import { usePathname } from "next/navigation";
 
@@ -39,7 +37,6 @@ export function scrollToCoursesComponent() {
 }
 
 const Navbar = () => {
-  const router = useRouter();
   const pathname = usePathname();
 
   const [display, setDisplay] = useState("none");
@@ -83,7 +80,7 @@ const Navbar = () => {
             {/* <Link href="/">Home</Link> */}
             <Link as={NextLink} href="/">
               Home
-            </Link> 
+            </Link>
           </ListItem>
 
           <ListItem _hover={{ color: "#08d88d", transition: "0.2s ease" }}>

@@ -22,7 +22,7 @@ const yantramanav = Yantramanav({
   subsets: ["latin"],
 });
 
-const roboto = Roboto({
+const roboto = Roboto({ 
   weight: ["400"],
   subsets: ["latin"],
 });
@@ -75,13 +75,13 @@ const Quarterone = () => {
     if (inView4) {
       setIsInView4(true);
     }
-    if (inView5) {
+    if (inView5) { 
       setIsInView5(true);
     }
   }, [inView1, inView2, inView3, inView4, inView5]);
 
-  return (
-    <Box>
+  return ( 
+    <Box> 
       {/* // Hero Section */}
       <Box
         height="86vh"
