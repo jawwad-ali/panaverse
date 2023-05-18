@@ -27,7 +27,7 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-const Quarterone = () => {
+const QuarterOne = () => {
   const { colorMode } = useColorMode();
 
   // Open the page from the top
@@ -483,4 +483,4 @@ const Quarterone = () => {
   );
 };
 
-export default Quarterone;
+export default QuarterOne;

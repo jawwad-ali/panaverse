@@ -25,12 +25,12 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
-export async function generateStaticParams() {
-  const name: string[] = ["q3"];
-  return name;
-}
+// export async function generateStaticParams() {
+//   const name: string[] = ["q3"];
+//   return name;
+// } 
 
-const Quarterthree = () => {
+const QuarterThree = () => {
   const { colorMode } = useColorMode();
 
   // Open the page from the top
@@ -149,4 +149,4 @@ const Quarterthree = () => {
   );
 };
 
-export default Quarterthree;
+export default QuarterThree;

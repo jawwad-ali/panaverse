@@ -29,12 +29,12 @@ const roboto = Roboto({
 });
 
 // params
-export async function generateStaticParams() {
-  const name: string[] = ["q2"];
-  return name;
-}
+// export async function generateStaticParams() {
+//   const name: string[] = ["q2"];
+//   return name;
+// }
 
-const Quartertwo = () => {
+const QuarterTwo = () => {
   const { colorMode } = useColorMode();
 
   // Open the page from the top
@@ -644,4 +644,4 @@ const Quartertwo = () => {
   );
 };
 
-export default Quartertwo;
+export default QuarterTwo;
